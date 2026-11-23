@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction — ML Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --primary-dark: #4f46e5;
+            --primary-glow: rgba(99, 102, 241, 0.15);
+            --accent: #22d3ee;
+            --accent-dark: #06b6d4;
+            --sidebar-bg: #0f172a;
+            --sidebar-hover: #1e293b;
+            --sidebar-active: #1e40af;
+            --body-bg: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --sidebar-width: 270px;
+            --hero-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+        }
+
+        html { scroll-behavior: smooth; }
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--body-bg);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ==================== SIDEBAR ==================== */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: var(--sidebar-width);
+            height: 100vh;
+            background: var(--sidebar-bg);
+            overflow-y: auto;
+            z-index: 1000;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .sidebar::-webkit-scrollbar { width: 4px; }
+        .sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 10px; }
+
+        .sidebar-brand {
+            padding: 1.75rem 1.5rem 1.25rem;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            background: linear-gradient(180deg, rgba(99, 102, 241, 0.1) 0%, transparent 100%);
+        }
+
+        .sidebar-brand .brand-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--hero-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 0.75rem;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        .sidebar-brand h5 {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1rem;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .sidebar-brand small {
+            color: var(--accent);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-weight: 700;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            padding: 0.75rem 0;
+            margin: 0;
+            flex: 1;
+        }
+
+        .sidebar-nav .nav-section-label {
+            padding: 1rem 1.5rem 0.4rem;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: rgba(255,255,255,0.3);
+            font-weight: 700;
+        }
+
+        .sidebar-nav li a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.65rem 1.5rem;
+            color: rgba(255,255,255,0.55);
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 500;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            border-left: 3px solid transparent;
+            margin: 1px 0;
+        }
+
+        .sidebar-nav li a:hover {
+            color: rgba(255,255,255,0.9);
+            background: var(--sidebar-hover);
+        }
+
+        .sidebar-nav li a.active {
+            color: #fff;
+            background: linear-gradient(90deg, rgba(99, 102, 241, 0.2), transparent);
+            border-left-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .sidebar-nav li a i {
+            font-size: 1rem;
+            width: 1.25rem;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        /* Predict CTA in sidebar */
+        .sidebar-nav li a.predict-cta {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #fff !important;
+            border-radius: 10px;
+            margin: 0.5rem 1rem;
+            padding: 0.75rem 1rem;
+            border-left: none;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+            transition: all 0.25s;
+        }
+
+        .sidebar-nav li a.predict-cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+        }
+
+        .sidebar-footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.3);
+        }
+
+        /* ==================== MAIN CONTENT ==================== */
+        .main-content {
+            margin-left: var(--sidebar-width);
+            min-height: 100vh;
+        }
+
+        /* ==================== MOBILE ==================== */
+        .sidebar-toggle {
+            display: none;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1100;
+            background: var(--sidebar-bg);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            width: 44px;
+            height: 44px;
+            font-size: 1.25rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            backdrop-filter: blur(8px);
+        }
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(4px);
+            z-index: 999;
+        }
+
+        @media (max-width: 991px) {
+            .sidebar { transform: translateX(-100%); }
+            .sidebar.show { transform: translateX(0); }
+            .sidebar-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .sidebar-overlay.show { display: block; }
+            .main-content { margin-left: 0; }
+            .hero-section { padding: 2rem 1rem !important; }
+            .content-section { padding: 2rem 1rem !important; }
+        }
+
+        /* ==================== HERO SECTION ==================== */
+        .hero-section {
+            background: var(--hero-gradient);
+            padding: 3rem 2.5rem 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #6366f1, #22d3ee, #8b5cf6, #6366f1);
+            background-size: 300% 100%;
+            animation: shimmer 4s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.8);
+            max-width: 600px;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .hero-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.15);
+            border: 2px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 0.75rem 2rem;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.25s;
+            backdrop-filter: blur(8px);
+        }
+
+        .hero-btn:hover {
+            background: #fff;
+            color: var(--primary-dark);
+            border-color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            text-align: left;
+        }
+
+        .hero-stat-value {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .hero-stat-label {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.65);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+        }
+
+        /* ==================== QUICK PREDICT STRIP ==================== */
+        .quick-predict-strip {
+            background: var(--card-bg);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1.25rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .quick-predict-strip .qp-inner {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .quick-predict-strip label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+        }
+
+        .quick-predict-strip .form-select,
+        .quick-predict-strip .form-control {
+            border-radius: 8px;
+            border: 1.5px solid #e2e8f0;
+            padding: 0.4rem 0.65rem;
+            font-size: 0.85rem;
+            max-width: 150px;
+            transition: border-color 0.2s;
+        }
+
+        .quick-predict-strip .form-select:focus,
+        .quick-predict-strip .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-glow);
+        }
+
+        .btn-quick-predict {
+            background: var(--hero-gradient);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 0.5rem 1.25rem;
+            font-weight: 700;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .btn-quick-predict:hover {
+            color: #fff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
+        }
+
+        .quick-result {
+            display: none;
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            border: 2px solid #6ee7b7;
+            border-radius: 10px;
+            padding: 0.5rem 1rem;
+            font-weight: 700;
+            color: #047857;
+            font-size: 1rem;
+            white-space: nowrap;
+            animation: popIn 0.3s ease;
+        }
+
+        .quick-result.show { display: flex; align-items: center; gap: 0.5rem; }
+
+        @keyframes popIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @media (max-width: 991px) {
+            .quick-predict-strip { display: none; }
+        }
+
+        /* ==================== SECTIONS ==================== */
+        .content-section {
+            padding: 3rem 2.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .content-section:last-of-type { border-bottom: none; }
+
+        .section-header {
+            margin-bottom: 2rem;
+        }
+
+        .section-header h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+
+        .section-header h2 i {
+            color: var(--primary);
+            font-size: 1.35rem;
+            background: var(--primary-glow);
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+            margin-top: 0.5rem;
+            max-width: 800px;
+            line-height: 1.65;
+        }
+
+        /* ==================== CARDS ==================== */
+        .card {
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            background: var(--card-bg);
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 0.9rem 1.25rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-body { padding: 1.25rem; }
+
+        /* ==================== CHARTS ==================== */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-height: 350px;
+        }
+
+        .chart-container canvas { max-height: 350px; }
+
+        .chart-container-tall { max-height: 450px; }
+        .chart-container-tall canvas { max-height: 450px; }
+
+        /* ==================== TABLES ==================== */
+        .table { font-size: 0.85rem; }
+
+        .table thead th {
+            background: #f8fafc;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--text-secondary);
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        /* ==================== HEATMAP ==================== */
+        .heatmap-table {
+            font-size: 0.75rem;
+            border-collapse: separate;
+            border-spacing: 2px;
+        }
+
+        .heatmap-table td, .heatmap-table th {
+            padding: 0.35rem 0.45rem;
+            text-align: center;
+            border: none;
+            white-space: nowrap;
+        }
+
+        .heatmap-table th {
+            background: transparent;
+            font-weight: 600;
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            max-width: 70px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .heatmap-cell {
+            border-radius: 4px;
+            font-weight: 500;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            min-width: 42px;
+        }
+
+        .heatmap-wrapper {
+            overflow-x: auto;
+            margin: 0 -0.5rem;
+            padding: 0 0.5rem;
+        }
+
+        /* ==================== CODE ==================== */
+        pre {
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: 0.82rem;
+            overflow-x: auto;
+        }
+
+        pre code {
+            font-family: 'JetBrains Mono', monospace;
+            color: #e2e8f0;
+        }
+
+        /* ==================== STAT CARDS ==================== */
+        .stat-card {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.25rem;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .stat-card:hover { transform: translateY(-2px); }
+
+        .stat-card.accent { background: linear-gradient(135deg, var(--accent-dark), #0891b2); }
+        .stat-card.success { background: linear-gradient(135deg, var(--success), #059669); }
+        .stat-card.warning { background: linear-gradient(135deg, var(--warning), #d97706); }
+        .stat-card.danger { background: linear-gradient(135deg, var(--danger), #dc2626); }
+
+        .stat-card .stat-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-card .stat-label {
+            font-size: 0.72rem;
+            opacity: 0.85;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            font-weight: 600;
+        }
+
+        /* ==================== FORMULA ==================== */
+        .formula {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid var(--primary);
+            border-radius: 0 10px 10px 0;
+            padding: 1rem 1.25rem;
+            margin: 1rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            overflow-x: auto;
+        }
+
+        /* ==================== TAKEAWAY ==================== */
+        .takeaway {
+            background: linear-gradient(135deg, #ede9fe, #e0e7ff);
+            border: 1px solid #c7d2fe;
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            margin-top: 1rem;
+            font-size: 0.88rem;
+        }
+
+        .takeaway strong { color: var(--primary-dark); }
+
+        /* ==================== SUB-HEADING ==================== */
+        .sub-heading {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 2rem 0 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        /* ==================== MATRIX ==================== */
+        .matrix-display {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            overflow-x: auto;
+        }
+
+        .matrix-display table {
+            border-collapse: collapse;
+            margin: 0.5rem auto;
+        }
+
+        .matrix-display td {
+            padding: 0.3rem 0.6rem;
+            text-align: right;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* ==================== PREDICTOR SECTION ==================== */
+        .predictor-section {
+            background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 50%, #e0e7ff 100%);
+        }
+
+        .predictor-form .form-label {
+            font-weight: 700;
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .predictor-form .form-control,
+        .predictor-form .form-select {
+            border-radius: 10px;
+            border: 2px solid #e2e8f0;
+            padding: 0.65rem 0.85rem;
+            font-size: 0.9rem;
+            background: #fff;
+            transition: all 0.2s;
+        }
+
+        .predictor-form .form-control:focus,
+        .predictor-form .form-select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px var(--primary-glow);
+        }
+
+        .btn-predict {
+            background: var(--hero-gradient);
+            color: #fff;
+            border: none;
+            border-radius: 14px;
+            padding: 0.9rem 3rem;
+            font-weight: 800;
+            font-size: 1.05rem;
+            transition: all 0.25s;
+            letter-spacing: 0.02em;
+        }
+
+        .btn-predict:hover {
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.35);
+        }
+
+        /* Prediction result */
+        #predictionResult { display: none; }
+        #predictionResult.show { display: block; animation: slideUp 0.4s ease; }
+
+        @keyframes slideUp {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .predicted-price {
+            font-size: 2.75rem;
+            font-weight: 800;
+            background: var(--hero-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .prediction-result-card {
+            border: 2px solid var(--primary-light);
+            background: linear-gradient(135deg, #faf5ff, #f5f3ff);
+        }
+
+        /* ==================== BACK TO TOP ==================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 46px;
+            height: 46px;
+            border-radius: 14px;
+            background: var(--hero-gradient);
+            color: #fff;
+            border: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.2s;
+            z-index: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top:hover { transform: translateY(-2px); }
+        .back-to-top.visible { opacity: 1; }
+
+        /* ==================== FLOATING PREDICT BUTTON ==================== */
+        .floating-predict-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 5rem;
+            background: var(--hero-gradient);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 0.85rem 1.5rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+            z-index: 900;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.25s;
+            text-decoration: none;
+        }
+
+        .floating-predict-btn:hover {
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
+        }
+
+        @media (max-width: 991px) {
+            .floating-predict-btn {
+                right: 1rem;
+                bottom: 1rem;
+                padding: 0.75rem 1.25rem;
+            }
+            .back-to-top { bottom: 1rem; left: 1rem; right: auto; }
+        }
+
+        /* ==================== FOOTER ==================== */
+        .site-footer {
+            background: var(--sidebar-bg);
+            color: rgba(255,255,255,0.7);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .site-footer small {
+            color: rgba(255,255,255,0.35);
+            font-size: 0.75rem;
+        }
+
+        /* ==================== UTILITY ==================== */
+        .text-muted-custom {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .badge-primary {
+            background: var(--primary);
+            color: #fff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.72rem;
+            font-weight: 700;
+        }
+
+        .info-box {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 10px;
+            padding: 0.85rem 1rem;
+            font-size: 0.85rem;
+            color: #0369a1;
+            margin: 0.75rem 0;
+        }
+
+        .warning-box {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-radius: 10px;
+            padding: 0.85rem 1rem;
+            font-size: 0.85rem;
+            color: #92400e;
+            margin: 0.75rem 0;
+        }
+
+        .loading-placeholder {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+        }
+
+        /* ==================== ANIMATIONS ==================== */
+        .fade-in { animation: fadeIn 0.5s ease; }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Mobile Toggle -->
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-icon"><i class="bi bi-house-heart"></i></div>
+            <small>ML Project</small>
+            <h5>House Price<br>Prediction</h5>
+        </div>
+        <ul class="sidebar-nav">
+            <li>
+                <a href="#predictor" data-section="predictor" class="predict-cta">
+                    <i class="bi bi-calculator-fill"></i> Predict Price
+                </a>
+            </li>
+            <li class="nav-section-label">Explore</li>
+            <li><a href="#overview" data-section="overview"><i class="bi bi-house-door"></i> Overview</a></li>
+            <li><a href="#preprocessing" data-section="preprocessing"><i class="bi bi-funnel"></i> Data Preprocessing</a></li>
+            <li><a href="#descriptive" data-section="descriptive"><i class="bi bi-bar-chart-line"></i> Descriptive Stats</a></li>
+            <li><a href="#inferential" data-section="inferential"><i class="bi bi-graph-up"></i> Inferential Stats</a></li>
+            <li><a href="#correlation" data-section="correlation"><i class="bi bi-grid-3x3"></i> Correlation</a></li>
+            <li class="nav-section-label">Models</li>
+            <li><a href="#regression" data-section="regression"><i class="bi bi-diagram-3"></i> Regression</a></li>
+            <li><a href="#linear-algebra" data-section="linear-algebra"><i class="bi bi-grid"></i> Linear Algebra</a></li>
+            <li><a href="#calculus" data-section="calculus"><i class="bi bi-bezier2"></i> Calculus</a></li>
+            <li><a href="#evaluation" data-section="evaluation"><i class="bi bi-clipboard-data"></i> Evaluation</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            B.Tech AI &amp; DS Project<br>&copy; 2026
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- ===== HERO ===== -->
+        <section class="hero-section">
+            <div class="container-fluid">
+                <div class="hero-title">House Price Prediction</div>
+                <p class="hero-subtitle">A Machine Learning system that predicts residential house prices in major Indian cities using statistical analysis, mathematical foundations, and regression modelling.</p>
+                <a href="#predictor" class="hero-btn">
+                    <i class="bi bi-calculator-fill"></i> Try the Predictor
+                </a>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="heroRecords">—</div>
+                        <div class="hero-stat-label">Clean Records</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="heroFeatures">—</div>
+                        <div class="hero-stat-label">Features</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="heroCities">—</div>
+                        <div class="hero-stat-label">Cities</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="heroBestR2">—</div>
+                        <div class="hero-stat-label">Best R² Score</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== QUICK PREDICT STRIP ===== -->
+        <div class="quick-predict-strip" id="quickPredictStrip">
+            <div class="qp-inner">
+                <label><i class="bi bi-lightning-fill" style="color:var(--warning)"></i> Quick Predict</label>
+                <select class="form-select" id="qpCity">
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                </select>
+                <select class="form-select" id="qpLocation"><option>Select city</option></select>
+                <select class="form-select" id="qpType">
+                    <option value="Apartment">Apartment</option>
+                    <option value="Builder Floor">Builder Floor</option>
+                    <option value="Independent House">Ind. House</option>
+                    <option value="Villa">Villa</option>
+                </select>
+                <input type="number" class="form-control" id="qpArea" value="1200" min="500" max="5000" placeholder="Area sqft" style="max-width:100px;">
+                <input type="number" class="form-control" id="qpBedrooms" value="3" min="1" max="6" placeholder="BHK" style="max-width:70px;">
+                <button class="btn-quick-predict" id="qpBtn">
+                    <i class="bi bi-lightning-fill"></i> Predict
+                </button>
+                <div class="quick-result" id="qpResult">
+                    <i class="bi bi-currency-rupee"></i>
+                    <span id="qpResultValue">—</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== PREDICTOR (FIRST) ===== -->
+        <section id="predictor" class="content-section predictor-section" data-section="predictor">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2><i class="bi bi-calculator"></i> Predict House Price</h2>
+                    <p>Enter property details below and our trained ML model will estimate the price. The prediction uses the same encoding and scaling applied during training.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card" style="border-width:2px; border-color: var(--primary-light);">
+                            <div class="card-header" style="background: linear-gradient(135deg, #f5f3ff, #ede9fe);"><i class="bi bi-pencil-square"></i> Property Details</div>
+                            <div class="card-body">
+                                <form class="predictor-form" id="predictorForm">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="predCity">City</label>
+                                            <select class="form-select" id="predCity">
+                                                <option value="Bangalore">Bangalore</option>
+                                                <option value="Chennai">Chennai</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="Hyderabad">Hyderabad</option>
+                                                <option value="Mumbai">Mumbai</option>
+                                                <option value="Pune">Pune</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="predLocation">Location</label>
+                                            <select class="form-select" id="predLocation">
+                                                <option value="">Select city first</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="predPropertyType">Property Type</label>
+                                            <select class="form-select" id="predPropertyType">
+                                                <option value="Apartment">Apartment</option>
+                                                <option value="Builder Floor">Builder Floor</option>
+                                                <option value="Independent House">Independent House</option>
+                                                <option value="Villa">Villa</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="predArea">Area (sq ft)</label>
+                                            <input type="number" class="form-control" id="predArea" value="1200" min="500" max="5000">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="predBedrooms">Bedrooms</label>
+                                            <input type="number" class="form-control" id="predBedrooms" value="3" min="1" max="6">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="predBathrooms">Bathrooms</label>
+                                            <input type="number" class="form-control" id="predBathrooms" value="2" min="1" max="6">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="predFloors">Floors</label>
+                                            <input type="number" class="form-control" id="predFloors" value="1" min="1" max="3">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="predAge">Property Age (years)</label>
+                                            <input type="number" class="form-control" id="predAge" value="5" min="0" max="50">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="predParking">Parking Spots</label>
+                                            <input type="number" class="form-control" id="predParking" value="1" min="0" max="3">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="predFurnishing">Furnishing</label>
+                                            <select class="form-select" id="predFurnishing">
+                                                <option value="Unfurnished">Unfurnished</option>
+                                                <option value="Semi-Furnished" selected>Semi-Furnished</option>
+                                                <option value="Fully Furnished">Fully Furnished</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <button type="submit" class="btn btn-predict btn-lg">
+                                            <i class="bi bi-calculator me-2"></i>Predict Price
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card prediction-result-card" id="predictionResult">
+                            <div class="card-header" style="background: linear-gradient(135deg, #f5f3ff, #ede9fe);"><i class="bi bi-currency-rupee"></i> Estimated Price</div>
+                            <div class="card-body text-center">
+                                <div class="predicted-price" id="predictedPriceValue">—</div>
+                                <p class="text-muted-custom" id="predictionNote"></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"><i class="bi bi-info-circle"></i> How It Works</div>
+                            <div class="card-body">
+                                <ol class="text-muted-custom small mb-0" style="line-height: 1.8;">
+                                    <li>Your inputs are encoded using the same methods as training data</li>
+                                    <li>Values are scaled using StandardScaler (z-score normalisation)</li>
+                                    <li>The scaled features are multiplied by learned model weights</li>
+                                    <li>Result: <code>Price = X &middot; W + b</code></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== OVERVIEW ===== -->
+        <section id="overview" class="content-section" data-section="overview">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2><i class="bi bi-house-door"></i> Project Overview</h2>
+                    <p>A comprehensive data science project covering data preprocessing, statistical analysis, mathematical foundations, and multiple ML models.</p>
+                </div>
+
+                <div class="row g-3 mb-4" id="overviewStatCards">
+                    <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-value" id="statRecords">—</div><div class="stat-label">Records</div></div></div>
+                    <div class="col-6 col-md-3"><div class="stat-card accent"><div class="stat-value" id="statFeatures">—</div><div class="stat-label">Features</div></div></div>
+                    <div class="col-6 col-md-3"><div class="stat-card success"><div class="stat-value" id="statCities">—</div><div class="stat-label">Cities</div></div></div>
+                    <div class="col-6 col-md-3"><div class="stat-card warning"><div class="stat-value" id="statPriceRange">—</div><div class="stat-label">Price Range</div></div></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><i class="bi bi-table"></i> Dataset Description</div>
+                    <div class="card-body">
+                        <div class="warning-box">
+                            <strong>Note:</strong> This project uses a <strong>synthetic dataset</strong> modelled on real Indian housing market patterns. It does not represent actual property transactions.
+                        </div>
+                        <div class="table-responsive mt-3">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>City</td><td>Categorical</td><td>City where the property is located (Chennai, Bangalore, Mumbai, Delhi, Hyderabad, Pune)</td></tr>
+                                    <tr><td>Location</td><td>Categorical</td><td>Specific locality / neighbourhood within the city</td></tr>
+                                    <tr><td>Property_Type</td><td>Categorical</td><td>Type of property (Apartment, Independent House, Villa, Builder Floor)</td></tr>
+                                    <tr><td>Area_SqFt</td><td>Numerical</td><td>Total area of the property in square feet</td></tr>
+                                    <tr><td>Bedrooms</td><td>Numerical</td><td>Number of bedrooms (BHK)</td></tr>
+                                    <tr><td>Bathrooms</td><td>Numerical</td><td>Number of bathrooms</td></tr>
+                                    <tr><td>Floors</td><td>Numerical</td><td>Number of floors in the property</td></tr>
+                                    <tr><td>Property_Age</td><td>Numerical</td><td>Age of the property in years (0 = newly constructed)</td></tr>
+                                    <tr><td>Parking</td><td>Numerical</td><td>Number of parking spots available</td></tr>
+                                    <tr><td>Furnishing</td><td>Categorical</td><td>Furnishing status (Unfurnished, Semi-Furnished, Fully Furnished)</td></tr>
+                                    <tr><td>House_Price</td><td>Numerical</td><td>Sale price in Indian Rupees (&#8377;) &mdash; <strong>TARGET VARIABLE</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><i class="bi bi-clipboard-data"></i> Dataset Summary Statistics</div>
+                    <div class="card-body">
+                        <div class="table-responsive" id="summaryStatsTable">
+                            <p class="loading-placeholder">Loading statistics&hellip;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PREPROCESSING ===== -->
+        <section id="preprocessing" class="content-section" data-section="preprocessing">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2><i class="bi bi-funnel"></i> Data Preprocessing</h2>
+                    <p>Raw data almost always has issues &mdash; missing entries, duplicates, inconsistent formats, and outliers. Preprocessing ensures the data is clean, consistent, and ready for Machine Learning.</p>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">Preprocessing Steps</div>
+                    <div class="card-body">
+                        <ol class="mb-0">
+                            <li><strong>Load Dataset</strong> &mdash; Read the CSV file into a Pandas DataFrame</li>
+                            <li><strong>Handle Missing Values</strong> &mdash; Fill blanks with median (numerical) or mode (categorical)</li>
+                            <li><strong>Remove Duplicates</strong> &mdash; Drop identical rows that inflate the dataset</li>
+                            <li><strong>Fix Inconsistencies</strong> &mdash; Correct negative ages and zero-area records</li>
+                            <li><strong>Encode Categories</strong> &mdash; Convert text columns to numbers the model can use</li>
+                            <li><strong>Scale Features</strong> &mdash; Normalise values so no single feature dominates</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header"><i class="bi bi-exclamation-triangle"></i> Missing Values</div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="missingValuesChart"></canvas></div>
+                                <p class="text-muted-custom mt-2">Columns with missing entries before imputation. We used <strong>median</strong> for numbers and <strong>mode</strong> for categories because median resists outliers and mode is the most frequent value.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header"><i class="bi bi-check-circle"></i> Data Cleaning Summary</div>
+                            <div class="card-body">
+                                <div class="table-responsive" id="cleaningSummaryTable">
+                                    <p class="loading-placeholder">Loading&hellip;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><i class="bi bi-code-square"></i> Encoding Methods</div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr><th>Column</th><th>Encoding</th><th>How It Works</th><th>Why This Method</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>Furnishing</code></td>
+                                        <td><span class="badge-primary">Label Encoding</span></td>
+                                        <td>Unfurnished&rarr;0, Semi-Furnished&rarr;1, Fully Furnished&rarr;2</td>
+                                        <td>Categories have a natural order (less&rarr;more furnished)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>City</code>, <code>Property_Type</code></td>
+                                        <td><span class="badge-primary">One-Hot Encoding</span></td>
+                                        <td>Creates a binary 0/1 column per category, drops one to avoid multicollinearity</td>
+                                        <td>No natural ordering &mdash; label encoding would falsely imply &ldquo;Mumbai&nbsp;&gt;&nbsp;Chennai&rdquo;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>Location</code></td>
+                                        <td><span class="badge-primary">Target Encoding</span></td>
+                                        <td>Replaces each location with the median house price of that area</td>
+                                        <td>60 unique locations &mdash; one-hot would create too many sparse columns</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="takeaway">
+                            <strong>Key Takeaway:</strong> Different categorical variables need different encoding strategies. Using the wrong method can mislead the model &mdash; for example, label-encoding unordered categories makes the model think one category is "larger" than another.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DESCRIPTIVE STATISTICS ===== -->
+        <section id="descriptive" class="content-section" data-section="descriptive">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2><i class="bi bi-bar-chart-line"></i> Descriptive Statistical Analysis</h2>
+                    <p>Descriptive statistics summarise and describe the main features of a dataset. They help us understand the data before building any models.</p>
+                </div>
+
+                <h4 class="sub-heading">Central Tendency</h4>
+                <p class="text-muted-custom">Central tendency measures tell us where the "centre" of the data lies.</p>
+                <ul class="text-muted-custom">
+                    <li><strong>Mean</strong> &mdash; The arithmetic average. Sensitive to outliers.</li>
+                    <li><strong>Median</strong> &mdash; The middle value when data is sorted. Robust to outliers.</li>
+                    <li><strong>Mode</strong> &mdash; The most frequently occurring value.</li>
+                </ul>
+                <div id="centralTendencyStats" class="row g-3 mb-4">
+                    <p class="loading-placeholder">Loading&hellip;</p>
+                </div>
+
+                <h4 class="sub-heading">Measures of Dispersion</h4>
+                <p class="text-muted-custom">Dispersion measures tell us how spread out the data values are.</p>
+                <ul class="text-muted-custom">
+                    <li><strong>Variance</strong> &mdash; Average of squared differences from the mean.</li>
+                    <li><strong>Standard Deviation</strong> &mdash; Square root of variance, in the same units as data.</li>
+                    <li><strong>Range</strong> &mdash; Difference between maximum and minimum values.</li>
+                    <li><strong>IQR (Interquartile Range)</strong> &mdash; Range of the middle 50% of data (Q3 &minus; Q1).</li>
+                </ul>
+                <div id="dispersionStats" class="row g-3 mb-4">
+                    <p class="loading-placeholder">Loading&hellip;</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">House Price Distribution (Histogram)</div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="priceHistogramChart"></canvas></div>
+                                <p class="text-muted-custom mt-2"><strong>Why right-skewed?</strong> Most houses are in the affordable-to-mid range, while a few luxury properties push the tail to the right. This is typical in real-world price data.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">House Price Box Plot</div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="priceBoxplotChart"></canvas></div>
+                                <p class="text-muted-custom mt-2">The box shows Q1&ndash;Q3 (the IQR). The line inside is the median. Points beyond the whiskers are potential outliers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Feature Distributions</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 mb-3"><div class="chart-container"><canvas id="areaDistChart"></canvas></div></div>
+                            <div class="col-md-6 col-lg-3 mb-3"><div class="chart-container"><canvas id="bedroomDistChart"></canvas></div></div>
+                            <div class="col-md-6 col-lg-3 mb-3"><div class="chart-container"><canvas id="bathroomDistChart"></canvas></div></div>
+                            <div class="col-md-6 col-lg-3 mb-3"><div class="chart-container"><canvas id="ageDistChart"></canvas></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Skewness &amp; Kurtosis</div>
+                            <div class="card-body">
+                                <div class="table-responsive" id="skewKurtTable">
+                                    <p class="loading-placeholder">Loading&hellip;</p>
+                                </div>
+                                <div class="info-box mt-2">
+                                    <strong>Skewness:</strong> Measures asymmetry. Positive = right tail is longer. Negative = left tail is longer.<br>
+                                    <strong>Kurtosis:</strong> Measures tail heaviness. High kurtosis = more outliers. Normal distribution has kurtosis &asymp; 3.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Outlier Detection</div>
+                            <div class="card-body">
+                                <div id="outlierStats">
+                                    <p class="loading-placeholder">Loading&hellip;</p>
+                                </div>
+                                <div class="takeaway mt-2">
+                                    <strong>Key Takeaway:</strong> Outliers in house prices often represent luxury properties &mdash; real data points, not errors. We investigate them rather than automatically removing them.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== INFERENTIAL STATISTICS ===== -->
+        <section id="inferential" class="content-section" data-section="inferential">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2><i class="bi bi-graph-up"></i> Inferential Statistics &amp; Probability</h2>
+                    <p>Inferential statistics allow us to make conclusions about an entire population based on a sample. This section covers sampling, probability, and hypothesis testing applied to housing data.</p>
+                </div>
+
+                <h4 class="sub-heading">Sampling Techniques</h4>
+                <p class="text-muted-custom">We rarely have access to the entire population. Instead, we draw samples and use them to estimate population parameters.</p>
+                <ul class="text-muted-custom">
+                    <li><strong>Simple Random Sampling</strong> &mdash; Every record has an equal chance of being selected.</li>
+                    <li><strong>Systematic Sampling</strong> &mdash; Select every k-th record from the dataset.</li>
+                    <li><strong>Stratified Sampling</strong> &mdash; Divide data into groups (strata) and sample proportionally from each.</li>
+                </ul>
+                <div class="card">
+                    <div class="card-header">Sample Means Comparison</div>
+                    <div class="card-body">
+                        <div class="chart-container"><canvas id="samplingChart"></canvas></div>
+                        <p class="text-muted-custom mt-2">Different sampling methods produce slightly different sample means. Stratified sampling often produces estimates closest to the population mean.</p>
+                    </div>
+                </div>
+
+                <h4 class="sub-heading">Law of Large Numbers</h4>
+                <p class="text-muted-custom">As we increase the sample size, the sample mean converges to the population mean.</p>
+                <div class="card">
+                    <div class="card-header">Cumulative Mean Convergence</div>
+                    <div class="card-body">
+                        <div class="chart-container"><canvas id="llnChart"></canvas></div>
+                    </div>
+                </div>
+
+                <h4 class="sub-heading">Probability Analysis</h4>
+                <div class="card">
+                    <div class="card-body" id="probabilityResults">
+                        <p class="loading-placeholder">Loading&hellip;</p>
+                    </div>
+                </div>
+
+                <h4 class="sub-heading">Hypothesis Testing</h4>
+                <p class="text-muted-custom">Hypothesis testing lets us make data-driven decisions about whether an observed pattern is statistically significant.</p>
+                <ul class="text-muted-custom mb-2">
+                    <li><strong>Null Hypothesis (H<sub>0</sub>)</strong> &mdash; The default assumption (no difference / no effect).</li>
+                    <li><strong>Alternative Hypothesis (H<sub>1</sub>)</strong> &mdash; What we want to test (there IS a difference).</li>
+                    <li><strong>Significance Level (&alpha;)</strong> &mdash; Typically 0.05 (5%). If p-value &lt; &alpha;, we reject H<sub>0</sub>.</li>
+                    <li><strong>P-value</strong> &mdash; The probability of observing such extreme results if H<sub>0</sub> is true.</li>
+                </ul>
+                <div class="card">
+                    <div class="card-header">Hypothesis Test Results</div>
+                    <div class="card-body" id="hypothesisResults">
+                        <p class="loading-placeholder">Loading&hellip;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CORRELATION ===== -->
+        <section id="correlation" class="content-section" data-section="correlation">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2><i class="bi bi-grid-3x3"></i> Correlation Analysis</h2>
+                    <p>Correlation measures the strength and direction of the linear relationship between two variables. Values range from &minus;1 to +1.</p>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Pearson Correlation Heatmap</div>
+                            <div class="card-body">
+                                <div class="heatmap-wrapper" id="pearsonHeatmapDiv">
+                                    <p class="loading-placeholder">Loading&hellip;</p>
+                                </div>
+                                <p class="text-muted-custom mt-2"><strong>Pearson</strong> measures <em>linear</em> relationships.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Spearman Correlation Heatmap</div>
+                            <div class="card-body">
+                                <div class="heatmap-wrapper" id="spearmanHeatmapDiv">
+                                    <p class="loading-placeholder">Loading&hellip;</p>
+                                </div>
+                                <p class="text-muted-custom mt-2"><strong>Spearman</strong> measures <em>monotonic</em> relationships. More robust to outliers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><i class="bi bi-sort-down"></i> Top Features Correlated with House Price</div>
+                    <div class="card-body">
+                        <div class="chart-container"><canvas id="topFeaturesChart"></canvas></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info-box"><strong>Positive Correlation:</strong> As one variable increases, the other tends to increase. Example: More area &rarr; higher price.</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-box"><strong>Negative Correlation:</strong> As one variable increases, the other tends to decrease. Example: Older property &rarr; lower price.</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="warning-box"><strong>Correlation &ne; Causation:</strong> Two variables may move together without one causing the other.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== REGRESSION ===== -->
+        <section id="regression" class="content-section" data-section="regression">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2><i class="bi bi-diagram-3"></i> Regression Analysis</h2>
+                    <p>Regression models find the relationship between independent variables (features) and a dependent variable (target: House Price).</p>
+                </div>
+
+                <h4 class="sub-heading">Model 1: Simple Linear Regression</h4>
+                <p class="text-muted-custom">Uses a single feature &mdash; <strong>Area (sq ft)</strong> &mdash; to predict price. <code>Price = m &times; Area + b</code></p>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="card">
+                            <div class="card-header">Area vs Price (Scatter + Regression Line)</div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="simpleRegressionChart"></canvas></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card">
+                            <div class="card-header">Simple Regression Statistics</div>
+                            <div class="card-body" id="simpleRegressionStats">
+                                <p class="loading-placeholder">Loading&hellip;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="sub-heading">Model 2: Multiple Linear Regression</h4>
+                <p class="text-muted-custom">Uses <strong>all available features</strong> to predict price: <code>Price = w<sub>1</sub>&times;Area + w<sub>2</sub>&times;Bedrooms + &hellip; + b</code></p>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="card">
+                            <div class="card-header">Actual vs Predicted Prices</div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="actualVsPredictedChart"></canvas></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card">
+                            <div class="card-header">Multiple Regression Statistics</div>
+                            <div class="card-body" id="multipleRegressionStats">
+                                <p class="loading-placeholder">Loading&hellip;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Model Comparison: Simple vs Multiple Regression</div>
+                    <div class="card-body">
+                        <div class="table-responsive" id="regressionComparisonTable">
+                            <p class="loading-placeholder">Loading&hellip;</p>
+                        </div>
+                        <div class="takeaway">
+                            <strong>Key Takeaway:</strong> Multiple regression captures more factors that influence house prices (location, property type, furnishing, etc.), leading to better predictions than using area alone.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LINEAR ALGEBRA ===== -->
+        <section id="linear-algebra" class="content-section" data-section="linear-algebra">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2><i class="bi bi-grid"></i> Linear Algebra in ML</h2>
+                    <p>Machine Learning is built on linear algebra. Features are stored as matrices, and predictions are computed using matrix multiplication.</p>
+                </div>
+
+                <div class="info-box mb-3">
+                    <strong>Key Idea:</strong> Instead of computing one prediction at a time, we represent all data as a matrix <strong>X</strong> and compute all predictions simultaneously: <code>Predictions = X &times; W + b</code>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Feature Matrix X (first 5 rows)</div>
+                            <div class="card-body">
+                                <div class="matrix-display" id="featureMatrixDisplay">
+                                    <p class="loading-placeholder">Loading&hellip;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Matrix Operations</div>
+                            <div class="card-body" id="matrixOpsDisplay">
+                                <p class="loading-placeholder">Loading&hellip;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Manual (NumPy) vs Scikit-learn Predictions</div>
+                    <div class="card-body">
+                        <div class="table-responsive" id="predictionComparisonTable">
+                            <p class="loading-placeholder">Loading&hellip;</p>
+                        </div>
+                        <div class="takeaway">
+                            <strong>Key Takeaway:</strong> Scikit-learn's <code>predict()</code> does exactly the same matrix multiplication internally. Understanding the math helps you debug models.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CALCULUS & OPTIMIZATION ===== -->
+        <section id="calculus" class="content-section" data-section="calculus">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2><i class="bi bi-bezier2"></i> Calculus &amp; Gradient Descent</h2>
+                    <p>Calculus provides the tools to optimise our model. The goal is to minimise the <strong>cost function</strong> (prediction error) by iteratively adjusting the model's weights.</p>
+                </div>
+
+                <div class="formula">
+                    <strong>Cost Function (MSE):</strong>&nbsp;&nbsp; J(w, b) = (1/n) &times; &Sigma;(y&#x0302; &minus; y)&sup2;
+                </div>
+                <div class="formula">
+                    <strong>Gradient (weight):</strong>&nbsp;&nbsp; &part;J/&part;w = (2/n) &times; &Sigma; x&middot;(y&#x0302; &minus; y)
+                </div>
+                <div class="formula">
+                    <strong>Update Rule:</strong>&nbsp;&nbsp; w = w &minus; &alpha; &times; &part;J/&part;w &nbsp;&nbsp;&nbsp; (where &alpha; = learning rate)
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Cost vs Iterations</div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="costChart"></canvas></div>
+                                <p class="text-muted-custom mt-2">The cost decreases rapidly in early iterations, then slows down as the model approaches the optimal weights.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Weight Convergence</div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="weightChart"></canvas></div>
+                                <p class="text-muted-custom mt-2">The weight value stabilises as gradient descent converges.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Gradient Descent Step-by-Step</div>
+                    <div class="card-body" id="gdSteps">
+                        <p class="loading-placeholder">Loading&hellip;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== MODEL EVALUATION ===== -->
+        <section id="evaluation" class="content-section" data-section="evaluation">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2><i class="bi bi-clipboard-data"></i> Model Evaluation</h2>
+                    <p>We evaluate model performance using multiple metrics and compare Linear Regression, Decision Tree, and Random Forest.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><i class="bi bi-trophy"></i> Model Comparison</div>
+                    <div class="card-body">
+                        <div class="table-responsive" id="modelComparisonTable">
+                            <p class="loading-placeholder">Loading&hellip;</p>
+                        </div>
+                        <div class="chart-container mt-3"><canvas id="modelComparisonChart"></canvas></div>
+                        <div class="info-box mt-2">
+                            <strong>MAE / MSE / RMSE</strong> are shown as a % of the mean house price &nbsp;|&nbsp; <strong>MAE</strong> = average absolute prediction error &nbsp;|&nbsp; <strong>RMSE</strong> = penalises large errors more than MAE &nbsp;|&nbsp; <strong>R&sup2;</strong> = proportion of variance explained (1.0 = perfect)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Residual Plot</div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="residualPlotChart"></canvas></div>
+                                <p class="text-muted-custom mt-2">Residuals should be randomly scattered around zero. A visible pattern suggests the model is missing some relationship.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Residual Distribution</div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="residualHistogramChart"></canvas></div>
+                                <p class="text-muted-custom mt-2">Ideally, residuals follow a normal distribution centred at zero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Actual vs Predicted (Best Model)</div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="evalActualPredictedChart"></canvas></div>
+                                <p class="text-muted-custom mt-2">Points close to the diagonal line indicate accurate predictions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">Cross-Validation Results</div>
+                            <div class="card-body" id="cvResults">
+                                <p class="loading-placeholder">Loading&hellip;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p><strong>House Price Prediction</strong> &mdash; B.Tech AI &amp; DS Project</p>
+            <small>This project uses a synthetic dataset for educational purposes. It does not represent actual property transactions or market advice.</small>
+        </footer>
+    </div>
+
+    <!-- Floating Predict Button -->
+    <a href="#predictor" class="floating-predict-btn" id="floatingPredictBtn">
+        <i class="bi bi-calculator-fill"></i> Predict Price
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

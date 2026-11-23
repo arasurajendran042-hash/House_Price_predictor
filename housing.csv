@@ -1,0 +1,1021 @@
+City,Location,Property_Type,Area_SqFt,Bedrooms,Bathrooms,Floors,Property_Age,Parking,Furnishing,House_Price
+Mumbai,Dadar,Apartment,1703,3,3.0,1,0.0,0.0,Semi-Furnished,39560000
+Chennai,Adyar,Villa,3053,4,4.0,3,10.0,2.0,Fully Furnished,43990000
+Bangalore,Yelahanka,Villa,2171,4,4.0,2,6.0,1.0,Semi-Furnished,31740000
+Bangalore,Whitefield,Independent House,2143,4,3.0,3,2.0,1.0,Unfurnished,16960000
+Chennai,Anna Nagar,Independent House,1712,2,2.0,2,3.0,1.0,Semi-Furnished,15530000
+Chennai,ECR,Independent House,2266,5,4.0,1,8.0,2.0,Unfurnished,24980000
+Delhi,Greater Kailash,Apartment,1007,2,2.0,1,5.0,1.0,Semi-Furnished,15210000
+Bangalore,Jayanagar,Apartment,1191,2,2.0,1,4.0,2.0,Semi-Furnished,9860000
+Bangalore,Marathahalli,Builder Floor,1827,3,3.0,2,9.0,1.0,Semi-Furnished,10580000
+Pune,Kharadi,Apartment,1517,3,3.0,1,2.0,1.0,Unfurnished,8920000
+Chennai,T Nagar,Builder Floor,1621,3,2.0,1,4.0,2.0,Unfurnished,15550000
+Bangalore,Hebbal,Villa,2060,3,2.0,2,3.0,1.0,Semi-Furnished,21460000
+Mumbai,Navi Mumbai,Independent House,1061,2,1.0,2,0.0,3.0,Unfurnished,17890000
+Chennai,Mylapore,Independent House,1529,4,4.0,2,14.0,1.0,Unfurnished,16900000
+Pune,Magarpatta,Apartment,500,1,1.0,1,0.0,2.0,Semi-Furnished,3630000
+Chennai,T Nagar,Independent House,1111,2,1.0,3,11.0,3.0,Semi-Furnished,16160000
+Bangalore,Whitefield,Apartment,1223,3,3.0,1,9.0,2.0,Semi-Furnished,8910000
+Bangalore,Koramangala,Apartment,611,2,1.0,1,10.0,2.0,Semi-Furnished,6860000
+Hyderabad,HITEC City,Apartment,654,1,1.0,1,32.0,2.0,Fully Furnished,3500000
+Mumbai,Thane,Independent House,1582,4,3.0,2,27.0,2.0,Semi-Furnished,18870000
+Chennai,ECR,Builder Floor,1269,3,2.0,1,16.0,1.0,Unfurnished,8610000
+Bangalore,Indiranagar,Villa,2467,5,4.0,3,2.0,1.0,Semi-Furnished,41190000
+Delhi,Lajpat Nagar,Apartment,1274,3,2.0,1,3.0,2.0,Semi-Furnished,12470000
+Chennai,Anna Nagar,Independent House,1940,3,3.0,1,0.0,2.0,Semi-Furnished,17010000
+Hyderabad,Kondapur,Independent House,2139,4,3.0,3,9.0,2.0,Semi-Furnished,18310000
+Chennai,Mylapore,Apartment,940,3,3.0,1,11.0,0.0,Semi-Furnished,8840000
+Mumbai,Borivali,Apartment,1732,3,2.0,1,44.0,1.0,Semi-Furnished,18440000
+Bangalore,Banashankari,Apartment,1819,3,3.0,1,23.0,0.0,Fully Furnished,14220000
+Bangalore,Yelahanka,Villa,3984,5,5.0,3,1.0,2.0,Unfurnished,49920000
+Hyderabad,LB Nagar,Independent House,1738,3,2.0,1,7.0,3.0,Fully Furnished,18650000
+Chennai,Mylapore,Apartment,776,2,1.0,1,3.0,1.0,Unfurnished,5310000
+Mumbai,Bandra,Apartment,851,2,1.0,1,1.0,2.0,Semi-Furnished,16320000
+Pune,Aundh,Villa,1504,2,2.0,3,14.0,2.0,Semi-Furnished,23000000
+Bangalore,Hebbal,Villa,2211,4,4.0,2,3.0,2.0,Semi-Furnished,22730000
+Delhi,Mayur Vihar,Apartment,1224,4,3.0,1,2.0,0.0,Unfurnished,12440000
+Bangalore,Jayanagar,Apartment,1782,3,3.0,1,6.0,2.0,Semi-Furnished,19300000
+Chennai,Adyar,Independent House,1242,4,4.0,1,8.0,3.0,Unfurnished,15160000
+Mumbai,Dadar,Apartment,891,1,1.0,1,15.0,2.0,Fully Furnished,17060000
+Chennai,Porur,Builder Floor,1381,3,3.0,1,0.0,0.0,Semi-Furnished,8930000
+Chennai,Porur,Apartment,500,1,1.0,1,6.0,1.0,Semi-Furnished,3120000
+Pune,Kothrud,Apartment,576,2,,1,2.0,1.0,Semi-Furnished,7500000
+Mumbai,Borivali,Villa,2809,5,5.0,3,2.0,3.0,Semi-Furnished,63240000
+Chennai,Adyar,Apartment,1704,2,2.0,1,2.0,1.0,Unfurnished,18080000
+Mumbai,Navi Mumbai,Villa,1500,3,2.0,2,10.0,1.0,Semi-Furnished,20290000
+Hyderabad,Begumpet,Independent House,1691,3,3.0,3,16.0,1.0,Semi-Furnished,13210000
+Chennai,Tambaram,Builder Floor,1160,1,1.0,1,1.0,1.0,Unfurnished,7830000
+Bangalore,Whitefield,Apartment,766,1,,1,10.0,1.0,Unfurnished,5970000
+Chennai,Porur,Villa,2714,6,5.0,2,8.0,3.0,Unfurnished,33190000
+Bangalore,Yelahanka,Villa,2470,3,2.0,2,7.0,3.0,Unfurnished,27270000
+Delhi,Greater Kailash,Independent House,2134,4,3.0,2,4.0,1.0,Unfurnished,26800000
+Mumbai,Malad,Villa,1700,2,2.0,2,13.0,2.0,Unfurnished,24980000
+Hyderabad,Madhapur,Builder Floor,1147,2,2.0,1,11.0,1.0,Fully Furnished,8400000
+Mumbai,Worli,Apartment,934,2,2.0,1,7.0,1.0,Unfurnished,18880000
+Mumbai,Thane,Independent House,1401,4,4.0,2,3.0,2.0,Unfurnished,21270000
+Bangalore,Koramangala,Apartment,1256,3,2.0,1,7.0,1.0,Unfurnished,8770000
+Bangalore,Whitefield,Apartment,660,1,1.0,1,6.0,2.0,Unfurnished,4220000
+Bangalore,Marathahalli,Independent House,1875,3,3.0,2,10.0,2.0,Fully Furnished,17340000
+Mumbai,Borivali,Apartment,920,1,1.0,1,0.0,1.0,Unfurnished,17090000
+Delhi,Mayur Vihar,Apartment,1246,2,1.0,1,1.0,2.0,Unfurnished,8800000
+Bangalore,Hebbal,Apartment,1483,3,,1,3.0,1.0,Semi-Furnished,10180000
+Chennai,Porur,Apartment,1986,4,3.0,1,11.0,2.0,Semi-Furnished,16130000
+Bangalore,Indiranagar,Apartment,1007,1,1.0,1,0.0,1.0,Semi-Furnished,12740000
+Chennai,ECR,Independent House,1554,2,1.0,1,8.0,2.0,Semi-Furnished,18950000
+Bangalore,HSR Layout,Villa,2388,4,4.0,2,21.0,,,33680000
+Mumbai,Malad,Builder Floor,1330,4,4.0,3,22.0,0.0,Fully Furnished,17330000
+Chennai,Anna Nagar,Independent House,2002,3,3.0,2,0.0,2.0,Fully Furnished,23470000
+Mumbai,Andheri,Villa,2728,6,6.0,3,6.0,1.0,,50880000
+Mumbai,Dadar,Independent House,1651,3,3.0,2,,3.0,,34190000
+Chennai,Porur,Independent House,1042,2,1.0,1,2.0,2.0,Fully Furnished,12780000
+Hyderabad,Secunderabad,Independent House,1208,2,2.0,1,21.0,1.0,Semi-Furnished,8580000
+Chennai,Adyar,Villa,1655,2,2.0,3,1.0,1.0,Fully Furnished,25920000
+Chennai,OMR,Independent House,2081,3,3.0,2,1.0,3.0,Unfurnished,13070000
+Delhi,Greater Kailash,Independent House,1615,3,3.0,2,5.0,1.0,Semi-Furnished,26650000
+Bangalore,Hebbal,Independent House,2571,5,5.0,1,12.0,2.0,Unfurnished,22550000
+Chennai,Porur,Villa,2702,4,3.0,3,16.0,3.0,Fully Furnished,31430000
+Delhi,Janakpuri,Independent House,1319,3,2.0,1,3.0,2.0,Semi-Furnished,15940000
+Hyderabad,Banjara Hills,Villa,2612,5,5.0,2,5.0,2.0,Unfurnished,25900000
+Delhi,Vasant Kunj,Independent House,2284,4,4.0,1,0.0,1.0,Fully Furnished,41930000
+Mumbai,Andheri,Independent House,2272,5,5.0,2,2.0,2.0,Semi-Furnished,37810000
+Bangalore,Koramangala,Independent House,1652,2,1.0,2,0.0,2.0,Unfurnished,20980000
+Hyderabad,Kondapur,Apartment,1186,2,2.0,1,1.0,1.0,Fully Furnished,8980000
+Pune,Kothrud,Apartment,687,1,1.0,1,0.0,2.0,Fully Furnished,6840000
+Bangalore,Indiranagar,Independent House,1153,3,3.0,2,22.0,3.0,Unfurnished,9480000
+Bangalore,Yelahanka,Independent House,2162,4,3.0,2,2.0,1.0,Unfurnished,20590000
+Chennai,OMR,Villa,2620,4,4.0,3,2.0,1.0,Semi-Furnished,29630000
+Mumbai,Powai,Apartment,1865,4,4.0,1,0.0,2.0,Semi-Furnished,48970000
+Chennai,Tambaram,Apartment,570,1,1.0,1,1.0,1.0,Fully Furnished,4740000
+Hyderabad,LB Nagar,Villa,2725,5,5.0,2,44.0,2.0,Semi-Furnished,14840000
+Delhi,Dwarka,Apartment,1138,1,1.0,1,14.0,0.0,Semi-Furnished,9780000
+Mumbai,Goregaon,Apartment,1222,3,3.0,1,18.0,,Semi-Furnished,14310000
+Bangalore,HSR Layout,Apartment,1777,3,2.0,1,17.0,2.0,Semi-Furnished,12580000
+Mumbai,Thane,Builder Floor,1617,3,2.0,1,11.0,1.0,Unfurnished,15570000
+Pune,Wakad,Independent House,1899,3,3.0,1,12.0,1.0,Unfurnished,13490000
+Hyderabad,Kondapur,Builder Floor,930,2,1.0,1,15.0,0.0,Semi-Furnished,4850000
+Hyderabad,Madhapur,Apartment,1905,3,2.0,1,7.0,1.0,Fully Furnished,14910000
+Bangalore,Jayanagar,Villa,2253,4,4.0,3,1.0,2.0,Semi-Furnished,33280000
+Bangalore,Jayanagar,Builder Floor,1555,4,3.0,2,2.0,1.0,Semi-Furnished,19280000
+Bangalore,Electronic City,Apartment,1022,2,1.0,1,12.0,1.0,Semi-Furnished,8520000
+Mumbai,Dadar,Apartment,1976,3,3.0,1,1.0,1.0,Semi-Furnished,29430000
+Bangalore,Electronic City,Villa,3306,5,5.0,2,2.0,1.0,Semi-Furnished,44170000
+Chennai,T Nagar,Independent House,1682,2,2.0,1,17.0,3.0,Semi-Furnished,20400000
+Bangalore,Indiranagar,Apartment,699,2,2.0,1,34.0,1.0,Fully Furnished,7840000
+Chennai,Guindy,Villa,1947,4,4.0,2,12.0,2.0,Unfurnished,13070000
+Mumbai,Goregaon,Apartment,735,1,1.0,1,3.0,0.0,Unfurnished,9220000
+Mumbai,Dadar,Apartment,1738,3,3.0,1,8.0,1.0,Fully Furnished,42140000
+Mumbai,Worli,Apartment,1298,3,2.0,1,19.0,1.0,Unfurnished,15160000
+Pune,Pimpri,Builder Floor,804,2,2.0,1,2.0,0.0,Unfurnished,4600000
+Bangalore,HSR Layout,Builder Floor,1467,3,3.0,1,2.0,2.0,Semi-Furnished,18130000
+Pune,Wakad,Apartment,973,1,,1,1.0,1.0,Fully Furnished,8960000
+Hyderabad,LB Nagar,Apartment,2179,4,4.0,1,32.0,2.0,Fully Furnished,10070000
+Mumbai,Malad,Apartment,651,1,1.0,1,24.0,3.0,Unfurnished,10220000
+Hyderabad,LB Nagar,Villa,1791,3,2.0,3,3.0,,Unfurnished,14530000
+Delhi,Pitampura,Villa,3153,6,5.0,3,11.0,2.0,Semi-Furnished,48420000
+Chennai,Guindy,Independent House,1658,3,3.0,2,50.0,2.0,Semi-Furnished,9170000
+Hyderabad,Kukatpally,Villa,2702,5,4.0,2,16.0,2.0,Semi-Furnished,29590000
+Chennai,Anna Nagar,Apartment,1287,4,3.0,1,2.0,2.0,Fully Furnished,13630000
+Chennai,T Nagar,Independent House,1534,3,3.0,1,15.0,1.0,Unfurnished,13280000
+Delhi,Punjabi Bagh,Builder Floor,1137,2,2.0,2,4.0,1.0,Semi-Furnished,16820000
+Mumbai,Goregaon,Independent House,2712,6,5.0,3,0.0,1.0,Unfurnished,50890000
+Mumbai,Worli,Builder Floor,1411,3,2.0,1,9.0,0.0,Semi-Furnished,28910000
+Chennai,Velachery,Apartment,948,1,1.0,1,2.0,1.0,,5720000
+Pune,Hinjewadi,Builder Floor,1417,3,3.0,1,14.0,2.0,Unfurnished,9040000
+Hyderabad,Secunderabad,Apartment,884,2,2.0,1,5.0,1.0,Unfurnished,4360000
+Delhi,Vasant Kunj,Independent House,1513,3,3.0,2,5.0,3.0,Unfurnished,20760000
+Mumbai,Borivali,Builder Floor,1475,3,2.0,3,0.0,1.0,Fully Furnished,24440000
+Mumbai,Malad,Apartment,539,1,1.0,1,0.0,0.0,Fully Furnished,7270000
+Bangalore,Electronic City,Independent House,2261,4,3.0,1,11.0,1.0,Unfurnished,13770000
+Bangalore,Hebbal,Independent House,1655,3,,3,8.0,2.0,Unfurnished,15250000
+Bangalore,Banashankari,Independent House,1719,2,2.0,3,1.0,2.0,Fully Furnished,19830000
+Mumbai,Navi Mumbai,Apartment,1477,3,2.0,1,14.0,0.0,Semi-Furnished,20170000
+Chennai,OMR,Villa,3226,5,4.0,2,2.0,2.0,Fully Furnished,41110000
+Mumbai,Powai,Apartment,880,2,2.0,1,15.0,1.0,Unfurnished,14730000
+Chennai,Velachery,Builder Floor,1568,2,2.0,1,7.0,1.0,Unfurnished,8130000
+Pune,Aundh,Villa,1504,2,2.0,3,14.0,2.0,Semi-Furnished,23000000
+Bangalore,Marathahalli,Apartment,725,2,2.0,1,11.0,2.0,Fully Furnished,4340000
+Delhi,Saket,Apartment,1689,2,1.0,1,7.0,,Semi-Furnished,21710000
+Bangalore,Whitefield,Apartment,892,1,1.0,1,3.0,3.0,Unfurnished,7560000
+Bangalore,Electronic City,Apartment,1105,2,2.0,1,17.0,1.0,Semi-Furnished,7920000
+Bangalore,Indiranagar,Apartment,1482,3,3.0,1,4.0,1.0,Fully Furnished,15800000
+Bangalore,Marathahalli,Apartment,1517,2,1.0,1,5.0,2.0,Unfurnished,10740000
+Mumbai,Andheri,Independent House,1423,3,3.0,1,10.0,,Fully Furnished,29130000
+Delhi,Janakpuri,Apartment,905,3,2.0,1,7.0,3.0,Semi-Furnished,11040000
+Bangalore,Jayanagar,Independent House,998,2,2.0,2,16.0,2.0,Unfurnished,9540000
+Chennai,Tambaram,Apartment,1374,4,3.0,1,9.0,1.0,Fully Furnished,13180000
+Chennai,OMR,Builder Floor,748,2,1.0,2,1.0,1.0,Semi-Furnished,7120000
+Bangalore,Banashankari,Independent House,1093,1,1.0,2,11.0,2.0,Semi-Furnished,11060000
+Chennai,Porur,Independent House,1487,4,4.0,1,0.0,2.0,Fully Furnished,17920000
+Delhi,Pitampura,Apartment,1544,3,3.0,1,8.0,1.0,Semi-Furnished,17510000
+Chennai,Adyar,Apartment,1828,5,5.0,1,10.0,1.0,Unfurnished,15150000
+Chennai,Anna Nagar,Apartment,1574,3,3.0,1,2.0,1.0,Unfurnished,14710000
+Chennai,T Nagar,Apartment,649,1,1.0,1,12.0,1.0,Semi-Furnished,4990000
+Mumbai,Bandra,Apartment,557,1,1.0,1,0.0,1.0,Unfurnished,11400000
+Mumbai,Borivali,Independent House,1363,4,4.0,2,9.0,2.0,Unfurnished,15290000
+Pune,Kharadi,Apartment,2069,3,2.0,1,,1.0,Unfurnished,16100000
+Mumbai,Navi Mumbai,Apartment,1180,3,3.0,1,5.0,2.0,Unfurnished,16610000
+Bangalore,HSR Layout,Apartment,722,1,1.0,1,15.0,1.0,Unfurnished,7090000
+Bangalore,Marathahalli,Independent House,1301,3,3.0,1,4.0,1.0,Unfurnished,10310000
+Pune,Baner,Villa,1575,4,3.0,2,0.0,2.0,Fully Furnished,30690000
+Bangalore,Banashankari,Apartment,669,1,1.0,1,2.0,1.0,Semi-Furnished,5550000
+Chennai,Anna Nagar,Independent House,1861,4,4.0,2,0.0,1.0,Semi-Furnished,18390000
+Chennai,T Nagar,Independent House,1682,2,2.0,1,17.0,3.0,Semi-Furnished,20400000
+Pune,Hadapsar,Builder Floor,1013,2,1.0,2,0.0,1.0,Fully Furnished,8820000
+Chennai,Anna Nagar,Apartment,710,1,1.0,1,4.0,0.0,Unfurnished,6240000
+Bangalore,Hebbal,Builder Floor,1372,3,3.0,1,10.0,0.0,Fully Furnished,11660000
+Delhi,Rohini,Villa,2020,4,4.0,2,2.0,1.0,Unfurnished,30060000
+Delhi,Dwarka,Apartment,1668,3,3.0,1,4.0,1.0,Semi-Furnished,19100000
+Chennai,Velachery,Independent House,800,3,2.0,1,14.0,1.0,Unfurnished,7830000
+Hyderabad,Jubilee Hills,Apartment,1640,3,2.0,1,6.0,2.0,Semi-Furnished,16220000
+Bangalore,Banashankari,Apartment,1138,1,1.0,1,6.0,1.0,Fully Furnished,8850000
+Chennai,Porur,Apartment,778,1,1.0,1,13.0,1.0,Fully Furnished,5880000
+Mumbai,Navi Mumbai,Independent House,1895,4,4.0,2,12.0,1.0,Unfurnished,31540000
+Bangalore,Electronic City,Apartment,1094,2,1.0,1,7.0,1.0,Fully Furnished,9790000
+Mumbai,Dadar,Independent House,2341,5,5.0,2,4.0,3.0,Unfurnished,47780000
+Pune,Hinjewadi,Apartment,754,1,1.0,1,25.0,1.0,Semi-Furnished,4500000
+Chennai,Guindy,Apartment,1158,3,2.0,1,1.0,1.0,Semi-Furnished,6970000
+Mumbai,Borivali,Independent House,1766,3,3.0,2,1.0,1.0,Fully Furnished,27320000
+Bangalore,Koramangala,Builder Floor,1192,1,1.0,2,0.0,1.0,Unfurnished,11790000
+Bangalore,Jayanagar,Builder Floor,2033,4,4.0,1,7.0,,Fully Furnished,23930000
+Chennai,Anna Nagar,Apartment,623,1,1.0,1,0.0,0.0,Semi-Furnished,4520000
+Hyderabad,Kondapur,Apartment,859,2,2.0,1,15.0,1.0,Unfurnished,3830000
+Bangalore,Yelahanka,Builder Floor,1497,4,4.0,2,3.0,1.0,Semi-Furnished,12240000
+Mumbai,Bandra,Apartment,1509,4,4.0,1,34.0,0.0,Semi-Furnished,19660000
+Bangalore,Whitefield,Independent House,2402,4,4.0,2,10.0,2.0,Semi-Furnished,16440000
+Mumbai,Powai,Apartment,1229,3,2.0,1,4.0,1.0,Fully Furnished,26950000
+Delhi,Pitampura,Independent House,1817,3,3.0,3,13.0,2.0,Semi-Furnished,14550000
+Delhi,Lajpat Nagar,Apartment,667,1,1.0,1,4.0,1.0,Semi-Furnished,8250000
+Bangalore,Jayanagar,Apartment,1667,4,4.0,1,7.0,1.0,Fully Furnished,18300000
+Delhi,Vasant Kunj,Apartment,1195,2,1.0,1,0.0,2.0,Unfurnished,12690000
+Mumbai,Navi Mumbai,Independent House,1157,2,2.0,3,,1.0,Fully Furnished,21320000
+Bangalore,Jayanagar,Independent House,1632,3,3.0,2,6.0,3.0,Unfurnished,15860000
+Mumbai,Malad,Villa,2430,4,4.0,3,17.0,2.0,Fully Furnished,46200000
+Bangalore,Koramangala,Independent House,1008,2,1.0,2,0.0,2.0,Unfurnished,13880000
+Pune,Hinjewadi,Independent House,2187,5,4.0,1,,1.0,Semi-Furnished,17610000
+Bangalore,Electronic City,Apartment,1575,3,3.0,1,5.0,1.0,Fully Furnished,14170000
+Hyderabad,HITEC City,Apartment,1597,4,3.0,1,12.0,1.0,Semi-Furnished,10880000
+Delhi,Punjabi Bagh,Independent House,1314,3,3.0,2,4.0,2.0,Unfurnished,20650000
+Mumbai,Thane,Independent House,1719,2,1.0,3,5.0,3.0,Semi-Furnished,30420000
+Delhi,Punjabi Bagh,Independent House,1995,4,4.0,3,19.0,2.0,Unfurnished,22860000
+Chennai,Adyar,Builder Floor,1627,2,2.0,2,14.0,,Unfurnished,15350000
+Pune,Wakad,Builder Floor,1563,2,,1,7.0,0.0,Semi-Furnished,9560000
+Mumbai,Worli,Villa,1858,5,5.0,3,5.0,1.0,Semi-Furnished,43770000
+Mumbai,Dadar,Independent House,3155,4,4.0,1,0.0,1.0,Unfurnished,70270000
+Bangalore,Whitefield,Villa,1500,3,2.0,2,0.0,2.0,Semi-Furnished,14410000
+Delhi,Mayur Vihar,Independent House,1906,4,3.0,3,,3.0,Semi-Furnished,18210000
+Pune,Hinjewadi,Apartment,1872,3,3.0,1,14.0,2.0,Unfurnished,11190000
+Chennai,T Nagar,Independent House,1144,2,2.0,1,10.0,1.0,Semi-Furnished,13230000
+Bangalore,Hebbal,Villa,2805,4,3.0,3,11.0,2.0,Fully Furnished,34860000
+Bangalore,Yelahanka,Apartment,759,1,1.0,1,11.0,1.0,Semi-Furnished,6620000
+Pune,Kothrud,Independent House,2482,5,4.0,3,7.0,2.0,Semi-Furnished,26650000
+Bangalore,Marathahalli,Builder Floor,1707,3,2.0,1,1.0,1.0,Semi-Furnished,16030000
+Bangalore,Marathahalli,Independent House,1834,3,3.0,2,9.0,2.0,Semi-Furnished,14900000
+Chennai,Adyar,Villa,2528,4,3.0,3,39.0,1.0,Unfurnished,29090000
+Bangalore,Koramangala,Apartment,935,3,3.0,1,4.0,,Unfurnished,8740000
+Hyderabad,Jubilee Hills,Independent House,2327,5,5.0,1,1.0,3.0,Fully Furnished,35190000
+Chennai,Adyar,Villa,2987,5,5.0,2,8.0,2.0,Fully Furnished,43800000
+Pune,Baner,Apartment,929,3,3.0,1,3.0,1.0,Semi-Furnished,9680000
+Chennai,T Nagar,Apartment,1298,2,2.0,1,4.0,2.0,Semi-Furnished,9540000
+Hyderabad,Kondapur,Apartment,1347,2,2.0,1,4.0,,Semi-Furnished,7220000
+Chennai,Velachery,Villa,2089,3,3.0,2,0.0,2.0,Semi-Furnished,27920000
+Hyderabad,Kondapur,Independent House,2144,3,2.0,2,12.0,3.0,Semi-Furnished,16280000
+Delhi,Punjabi Bagh,Villa,2115,4,3.0,2,29.0,3.0,Unfurnished,35120000
+Chennai,OMR,Apartment,727,1,1.0,1,2.0,1.0,Fully Furnished,7100000
+Delhi,Punjabi Bagh,Villa,2032,5,4.0,2,4.0,2.0,Fully Furnished,49070000
+Mumbai,Thane,Apartment,500,2,1.0,1,20.0,3.0,Unfurnished,9040000
+Hyderabad,Madhapur,Apartment,1254,3,3.0,1,,1.0,Fully Furnished,13120000
+Mumbai,Bandra,Apartment,936,2,2.0,1,1.0,1.0,Unfurnished,16370000
+Delhi,Vasant Kunj,Independent House,1915,5,5.0,2,14.0,2.0,Fully Furnished,31480000
+Hyderabad,Begumpet,Villa,1638,2,2.0,3,0.0,2.0,Unfurnished,18930000
+Delhi,Dwarka,Independent House,1758,3,3.0,3,18.0,2.0,Semi-Furnished,15950000
+Chennai,T Nagar,Builder Floor,2437,3,2.0,2,8.0,1.0,Unfurnished,24770000
+Bangalore,HSR Layout,Apartment,1335,3,3.0,1,22.0,2.0,Unfurnished,11100000
+Chennai,T Nagar,Apartment,1195,2,2.0,1,0.0,3.0,Semi-Furnished,13410000
+Bangalore,Marathahalli,Independent House,1123,3,3.0,2,11.0,,,12390000
+Pune,Wakad,Independent House,1905,4,3.0,2,1.0,2.0,Unfurnished,15430000
+Chennai,Adyar,Builder Floor,997,2,1.0,2,1.0,1.0,Unfurnished,9360000
+Delhi,Greater Kailash,Independent House,1332,3,2.0,2,5.0,2.0,Unfurnished,21310000
+Pune,Viman Nagar,Independent House,1603,3,2.0,3,9.0,1.0,Semi-Furnished,18780000
+Chennai,Tambaram,Apartment,2095,4,4.0,1,20.0,1.0,Semi-Furnished,10790000
+Chennai,Guindy,Villa,3060,5,5.0,2,1.0,3.0,Unfurnished,40460000
+Chennai,Velachery,Independent House,800,2,2.0,2,7.0,2.0,Semi-Furnished,6850000
+Delhi,Dwarka,Apartment,763,2,1.0,1,3.0,1.0,Unfurnished,8870000
+Delhi,Pitampura,Apartment,816,2,2.0,1,3.0,1.0,Semi-Furnished,10030000
+Bangalore,Marathahalli,Villa,1884,4,3.0,2,4.0,2.0,Fully Furnished,17290000
+Chennai,OMR,Apartment,1469,2,2.0,1,0.0,1.0,Fully Furnished,14080000
+Chennai,Porur,Apartment,828,1,1.0,1,32.0,2.0,Semi-Furnished,4670000
+Bangalore,Banashankari,Builder Floor,1535,4,3.0,2,18.0,3.0,Semi-Furnished,10100000
+Delhi,Saket,Independent House,1440,3,3.0,3,11.0,3.0,Unfurnished,22490000
+Pune,Kothrud,Independent House,1208,4,4.0,2,15.0,2.0,Semi-Furnished,8690000
+Bangalore,Indiranagar,Builder Floor,1316,3,3.0,2,3.0,1.0,Unfurnished,11630000
+Pune,Pimpri,Apartment,739,1,1.0,1,33.0,2.0,Unfurnished,3940000
+Mumbai,Thane,Independent House,2056,4,4.0,2,2.0,2.0,Unfurnished,25360000
+Chennai,Velachery,Apartment,500,1,1.0,1,10.0,0.0,Fully Furnished,3520000
+Bangalore,Hebbal,Independent House,2500,5,,3,16.0,1.0,Fully Furnished,31220000
+Delhi,Saket,Apartment,1551,4,4.0,1,14.0,2.0,Fully Furnished,21040000
+Bangalore,Electronic City,Independent House,2305,4,4.0,1,12.0,1.0,Semi-Furnished,15260000
+Delhi,Punjabi Bagh,Apartment,1603,3,3.0,1,34.0,2.0,Fully Furnished,15980000
+Bangalore,Koramangala,Apartment,611,2,1.0,1,10.0,2.0,Semi-Furnished,6860000
+Hyderabad,LB Nagar,Apartment,1266,3,2.0,1,6.0,0.0,Semi-Furnished,7870000
+Pune,Aundh,Villa,2059,3,2.0,3,46.0,2.0,Semi-Furnished,20710000
+Pune,Magarpatta,Apartment,989,2,1.0,1,21.0,1.0,Semi-Furnished,6990000
+Mumbai,Malad,Builder Floor,1634,4,3.0,2,6.0,1.0,Semi-Furnished,23320000
+Delhi,Saket,Apartment,1390,3,3.0,1,0.0,1.0,Fully Furnished,15880000
+Bangalore,Marathahalli,Independent House,800,2,2.0,1,7.0,2.0,Semi-Furnished,11050000
+Mumbai,Goregaon,Apartment,1525,4,3.0,1,5.0,2.0,Unfurnished,17760000
+Bangalore,Hebbal,Apartment,1292,3,2.0,1,5.0,3.0,Unfurnished,10900000
+Pune,Aundh,Builder Floor,1244,3,3.0,2,11.0,2.0,Unfurnished,10710000
+Mumbai,Dadar,Independent House,1519,2,2.0,1,13.0,1.0,Semi-Furnished,34730000
+Mumbai,Bandra,Apartment,1626,3,3.0,1,13.0,2.0,Unfurnished,27420000
+Pune,Hinjewadi,Apartment,1284,3,2.0,1,0.0,0.0,Semi-Furnished,7850000
+Bangalore,Jayanagar,Independent House,1699,3,2.0,2,5.0,2.0,Fully Furnished,30440000
+Bangalore,Marathahalli,Apartment,644,2,2.0,1,19.0,1.0,Fully Furnished,5260000
+Bangalore,Banashankari,Villa,3113,6,6.0,2,0.0,2.0,Unfurnished,40320000
+Pune,Hinjewadi,Apartment,930,2,,1,22.0,1.0,Semi-Furnished,5720000
+Bangalore,Yelahanka,Apartment,710,1,1.0,1,7.0,2.0,Fully Furnished,4240000
+Hyderabad,LB Nagar,Builder Floor,871,2,2.0,1,5.0,1.0,Unfurnished,5110000
+Delhi,Rohini,Independent House,1966,4,4.0,2,0.0,2.0,Fully Furnished,19540000
+Mumbai,Dadar,Apartment,1392,2,2.0,1,2.0,0.0,Semi-Furnished,35320000
+Mumbai,Dadar,Builder Floor,1353,3,3.0,2,0.0,2.0,Unfurnished,29760000
+Bangalore,Koramangala,Apartment,1144,2,1.0,1,7.0,2.0,Semi-Furnished,9620000
+Chennai,Guindy,Villa,3405,5,,2,6.0,2.0,Semi-Furnished,37550000
+Bangalore,Koramangala,Apartment,1144,2,1.0,1,7.0,2.0,Semi-Furnished,9620000
+Chennai,ECR,Apartment,648,1,1.0,1,9.0,1.0,Semi-Furnished,5980000
+Delhi,Saket,Independent House,1150,1,1.0,1,11.0,2.0,Semi-Furnished,19490000
+Chennai,OMR,Independent House,1746,2,1.0,2,9.0,1.0,Semi-Furnished,18390000
+Bangalore,Koramangala,Apartment,818,2,2.0,1,3.0,2.0,Fully Furnished,10990000
+Hyderabad,Madhapur,Independent House,1594,4,3.0,1,0.0,1.0,Unfurnished,16000000
+Delhi,Pitampura,Apartment,500,2,2.0,1,10.0,0.0,,5200000
+Chennai,Porur,Builder Floor,1212,2,2.0,2,12.0,2.0,Unfurnished,8110000
+Pune,Hinjewadi,Villa,1500,2,2.0,2,14.0,2.0,Unfurnished,11720000
+Mumbai,Borivali,Apartment,931,3,3.0,1,14.0,1.0,Semi-Furnished,9590000
+Chennai,Mylapore,Builder Floor,1207,3,2.0,2,0.0,1.0,Fully Furnished,17410000
+Mumbai,Goregaon,Apartment,1554,2,2.0,1,0.0,2.0,Semi-Furnished,22840000
+Chennai,Anna Nagar,Builder Floor,1892,3,3.0,2,14.0,0.0,Semi-Furnished,14040000
+Delhi,Saket,Apartment,1459,2,2.0,1,3.0,1.0,Fully Furnished,24730000
+Chennai,Anna Nagar,Apartment,1566,4,4.0,1,22.0,1.0,Fully Furnished,13080000
+Bangalore,Jayanagar,Apartment,1306,4,3.0,1,8.0,1.0,Semi-Furnished,15270000
+Chennai,Tambaram,Builder Floor,1348,3,3.0,3,12.0,1.0,Unfurnished,6390000
+Chennai,OMR,Villa,2512,4,4.0,2,24.0,1.0,Semi-Furnished,22450000
+Chennai,Velachery,Independent House,1233,3,2.0,2,5.0,1.0,Fully Furnished,13790000
+Pune,Kharadi,Apartment,1066,2,1.0,1,16.0,1.0,Semi-Furnished,7120000
+Mumbai,Andheri,Independent House,1777,3,2.0,1,5.0,1.0,Fully Furnished,24510000
+Delhi,Dwarka,Apartment,1106,2,1.0,1,12.0,0.0,Unfurnished,9110000
+Bangalore,Jayanagar,Independent House,1447,3,3.0,1,20.0,2.0,Fully Furnished,20210000
+Chennai,Tambaram,Apartment,1162,3,2.0,1,17.0,3.0,Unfurnished,9110000
+Chennai,Mylapore,Apartment,1097,2,2.0,1,0.0,2.0,Fully Furnished,12910000
+Mumbai,Powai,Apartment,1008,1,1.0,1,7.0,1.0,Semi-Furnished,16430000
+Chennai,Porur,Apartment,891,2,2.0,1,0.0,1.0,Unfurnished,4380000
+Hyderabad,Begumpet,Villa,1899,3,3.0,2,18.0,2.0,Fully Furnished,22360000
+Chennai,Tambaram,Apartment,837,3,3.0,1,2.0,1.0,Fully Furnished,7680000
+Delhi,Janakpuri,Independent House,2406,3,2.0,2,10.0,2.0,Unfurnished,28850000
+Mumbai,Goregaon,Builder Floor,1586,2,1.0,2,7.0,2.0,Semi-Furnished,22550000
+Chennai,T Nagar,Villa,1923,4,4.0,3,2.0,2.0,Semi-Furnished,27600000
+Pune,Wakad,Independent House,1884,4,3.0,2,5.0,2.0,Fully Furnished,13810000
+Bangalore,Marathahalli,Independent House,3064,6,5.0,2,2.0,1.0,Semi-Furnished,26580000
+Chennai,OMR,Apartment,545,2,2.0,1,10.0,2.0,Semi-Furnished,4970000
+Bangalore,Hebbal,Builder Floor,1517,2,2.0,2,1.0,2.0,Fully Furnished,17810000
+Delhi,Mayur Vihar,Builder Floor,1554,4,4.0,2,2.0,0.0,Semi-Furnished,15670000
+Mumbai,Powai,Independent House,1980,4,4.0,2,6.0,2.0,Semi-Furnished,41600000
+Delhi,Dwarka,Villa,4010,5,4.0,3,9.0,1.0,Semi-Furnished,45580000
+Bangalore,Marathahalli,Villa,1500,2,2.0,2,1.0,2.0,Unfurnished,15040000
+Bangalore,Indiranagar,Independent House,989,3,2.0,2,9.0,2.0,Fully Furnished,11950000
+Chennai,OMR,Independent House,1449,3,3.0,1,29.0,2.0,Unfurnished,11970000
+Hyderabad,Secunderabad,Apartment,1146,1,1.0,1,10.0,1.0,Semi-Furnished,7780000
+Hyderabad,Secunderabad,Independent House,1737,2,1.0,2,,2.0,Semi-Furnished,10160000
+Delhi,Janakpuri,Apartment,1309,4,3.0,1,17.0,2.0,Unfurnished,12590000
+Chennai,Anna Nagar,Independent House,1546,2,1.0,1,19.0,2.0,Semi-Furnished,12110000
+Bangalore,Marathahalli,Independent House,1029,2,1.0,3,19.0,2.0,Semi-Furnished,9350000
+Bangalore,Marathahalli,Apartment,1625,3,3.0,1,2.0,1.0,Fully Furnished,17140000
+Delhi,Dwarka,Independent House,812,2,1.0,2,4.0,2.0,Unfurnished,7440000
+Pune,Viman Nagar,Apartment,1346,2,2.0,1,6.0,0.0,Unfurnished,10570000
+Chennai,Tambaram,Apartment,1732,4,4.0,1,1.0,1.0,Fully Furnished,11230000
+Pune,Viman Nagar,Independent House,2282,4,4.0,3,3.0,2.0,Semi-Furnished,28880000
+Chennai,Guindy,Independent House,1659,2,,1,23.0,3.0,Semi-Furnished,10790000
+Mumbai,Bandra,Apartment,1236,2,1.0,1,23.0,1.0,Semi-Furnished,16410000
+Bangalore,Banashankari,Independent House,1885,4,4.0,1,2.0,2.0,Unfurnished,17930000
+Bangalore,Whitefield,Apartment,1273,2,2.0,1,8.0,2.0,Fully Furnished,12680000
+Bangalore,Yelahanka,Villa,2182,3,2.0,2,8.0,2.0,Fully Furnished,29270000
+Bangalore,HSR Layout,Villa,2080,4,4.0,3,19.0,1.0,Fully Furnished,33830000
+Bangalore,Indiranagar,Independent House,1891,4,3.0,3,5.0,2.0,Unfurnished,18200000
+Hyderabad,Banjara Hills,Independent House,2178,4,4.0,2,3.0,3.0,,19680000
+Bangalore,Hebbal,Independent House,1009,1,1.0,1,9.0,3.0,Fully Furnished,10000000
+Mumbai,Goregaon,Villa,2530,5,5.0,2,8.0,1.0,Fully Furnished,63540000
+Delhi,Lajpat Nagar,Apartment,937,3,3.0,1,9.0,1.0,Unfurnished,8040000
+Chennai,ECR,Villa,2399,4,3.0,2,6.0,2.0,Fully Furnished,41580000
+Bangalore,Marathahalli,Apartment,1225,2,2.0,1,11.0,2.0,Unfurnished,7030000
+Chennai,ECR,Builder Floor,1896,5,4.0,2,16.0,1.0,Unfurnished,10860000
+Chennai,OMR,Builder Floor,1838,5,4.0,2,13.0,1.0,Unfurnished,12390000
+Pune,Viman Nagar,Independent House,1806,3,3.0,2,4.0,3.0,Semi-Furnished,26470000
+Bangalore,Jayanagar,Apartment,1588,3,3.0,1,9.0,2.0,Unfurnished,14270000
+Bangalore,Koramangala,Apartment,633,1,1.0,1,1.0,2.0,Unfurnished,5060000
+Mumbai,Malad,Independent House,0,4,3.0,2,11.0,2.0,Unfurnished,28670000
+Delhi,Punjabi Bagh,Builder Floor,1522,2,1.0,2,14.0,1.0,Semi-Furnished,16940000
+Mumbai,Worli,Independent House,2047,3,3.0,1,3.0,3.0,Fully Furnished,37430000
+Bangalore,Banashankari,Apartment,519,2,2.0,1,14.0,1.0,Semi-Furnished,3420000
+Bangalore,Hebbal,Independent House,1682,2,1.0,2,12.0,1.0,Fully Furnished,17050000
+Bangalore,Whitefield,Apartment,500,1,1.0,1,25.0,0.0,Unfurnished,2630000
+Mumbai,Worli,Builder Floor,1731,4,3.0,2,0.0,1.0,Unfurnished,34050000
+Mumbai,Worli,Builder Floor,1262,3,3.0,2,4.0,2.0,Semi-Furnished,21590000
+Mumbai,Bandra,Apartment,972,2,2.0,1,20.0,1.0,Unfurnished,14270000
+Chennai,Guindy,Villa,2447,3,,2,5.0,2.0,Semi-Furnished,23930000
+Chennai,Guindy,Builder Floor,1602,3,2.0,1,14.0,1.0,Unfurnished,8060000
+Mumbai,Dadar,Apartment,1670,3,3.0,1,2.0,1.0,Unfurnished,34590000
+Hyderabad,Kukatpally,Independent House,2146,4,3.0,1,23.0,3.0,Fully Furnished,13540000
+Mumbai,Malad,Independent House,2354,3,2.0,3,,2.0,Semi-Furnished,39830000
+Bangalore,Hebbal,Apartment,836,2,2.0,1,31.0,0.0,Unfurnished,4990000
+Bangalore,Banashankari,Apartment,1500,3,2.0,1,3.0,1.0,Fully Furnished,16520000
+Delhi,Punjabi Bagh,Builder Floor,1845,3,3.0,1,1.0,,Semi-Furnished,18780000
+Hyderabad,Madhapur,Apartment,904,2,1.0,1,-19.0,1.0,Unfurnished,5790000
+Mumbai,Powai,Independent House,2309,4,4.0,2,8.0,3.0,Semi-Furnished,52540000
+Bangalore,Banashankari,Independent House,1617,3,2.0,3,0.0,2.0,Semi-Furnished,20440000
+Chennai,Guindy,Apartment,686,1,,1,4.0,1.0,Semi-Furnished,4220000
+Bangalore,Electronic City,Independent House,1403,3,3.0,2,11.0,2.0,Fully Furnished,14330000
+Mumbai,Borivali,Apartment,1997,5,5.0,1,17.0,1.0,Semi-Furnished,21340000
+Bangalore,HSR Layout,Villa,2133,3,2.0,2,18.0,3.0,Semi-Furnished,22630000
+Chennai,Adyar,Apartment,1912,5,4.0,1,1.0,1.0,Semi-Furnished,21960000
+Chennai,T Nagar,Apartment,1206,2,2.0,1,,1.0,Fully Furnished,14590000
+Pune,Kothrud,Independent House,1105,2,2.0,2,14.0,3.0,Semi-Furnished,8800000
+Mumbai,Bandra,Apartment,1280,2,1.0,1,36.0,0.0,Semi-Furnished,21070000
+Mumbai,Powai,Apartment,1277,3,3.0,1,0.0,3.0,Semi-Furnished,32210000
+Chennai,Tambaram,Apartment,1490,3,2.0,1,3.0,1.0,Unfurnished,11380000
+Mumbai,Borivali,Apartment,927,2,2.0,1,2.0,1.0,Fully Furnished,12400000
+Delhi,Mayur Vihar,Apartment,937,1,1.0,1,7.0,1.0,Unfurnished,9300000
+Chennai,Adyar,Apartment,1536,4,4.0,1,4.0,1.0,Unfurnished,14750000
+Chennai,Guindy,Apartment,1412,4,4.0,1,10.0,1.0,Semi-Furnished,11660000
+Bangalore,Banashankari,Apartment,2218,4,3.0,1,1.0,1.0,Fully Furnished,23210000
+Mumbai,Andheri,Apartment,1648,3,2.0,1,42.0,2.0,Semi-Furnished,14590000
+Delhi,Pitampura,Independent House,1695,4,4.0,2,13.0,2.0,Unfurnished,14650000
+Delhi,Saket,Apartment,1706,2,2.0,1,0.0,0.0,Fully Furnished,23390000
+Chennai,T Nagar,Apartment,1491,3,2.0,1,13.0,2.0,Semi-Furnished,15910000
+Mumbai,Dadar,Apartment,1346,2,2.0,1,0.0,1.0,Unfurnished,33740000
+Mumbai,Borivali,Builder Floor,1591,3,3.0,2,12.0,1.0,Fully Furnished,17980000
+Bangalore,Hebbal,Apartment,1672,2,2.0,1,15.0,0.0,Semi-Furnished,13160000
+Delhi,Saket,Apartment,1027,2,2.0,1,2.0,1.0,Semi-Furnished,12480000
+Bangalore,Hebbal,Independent House,2197,3,3.0,1,17.0,2.0,Semi-Furnished,25420000
+Bangalore,Koramangala,Independent House,1898,3,3.0,2,2.0,2.0,Unfurnished,20680000
+Chennai,Guindy,Villa,2747,4,4.0,2,3.0,1.0,Fully Furnished,31060000
+Chennai,Porur,Villa,1912,5,4.0,2,0.0,2.0,Unfurnished,20150000
+Chennai,Velachery,Independent House,2101,4,4.0,2,6.0,3.0,Fully Furnished,20350000
+Hyderabad,Kukatpally,Independent House,1296,3,3.0,3,33.0,2.0,Fully Furnished,6750000
+Chennai,Adyar,Apartment,880,3,3.0,1,9.0,0.0,Semi-Furnished,8390000
+Chennai,Mylapore,Builder Floor,1226,3,3.0,2,1.0,1.0,,16960000
+Mumbai,Goregaon,Builder Floor,1639,2,1.0,2,3.0,1.0,Fully Furnished,27260000
+Delhi,Greater Kailash,Apartment,1712,3,3.0,1,16.0,1.0,Semi-Furnished,22930000
+Pune,Kothrud,Independent House,1796,4,3.0,1,26.0,1.0,Fully Furnished,20000000
+Delhi,Rohini,Independent House,2767,5,5.0,2,0.0,1.0,Fully Furnished,31260000
+Mumbai,Borivali,Apartment,1446,2,2.0,1,14.0,1.0,Unfurnished,18600000
+Bangalore,Hebbal,Independent House,1738,3,3.0,1,27.0,3.0,Fully Furnished,15560000
+Chennai,Mylapore,Independent House,1884,5,4.0,1,11.0,2.0,Fully Furnished,26410000
+Delhi,Saket,Apartment,1212,3,3.0,1,3.0,1.0,Unfurnished,19820000
+Pune,Viman Nagar,Apartment,1098,3,3.0,1,27.0,1.0,Unfurnished,8510000
+Mumbai,Dadar,Apartment,525,1,,1,10.0,2.0,Semi-Furnished,11890000
+Bangalore,Whitefield,Builder Floor,2049,3,3.0,1,2.0,0.0,Unfurnished,17330000
+Hyderabad,Madhapur,Independent House,2684,5,5.0,2,1.0,3.0,Fully Furnished,31730000
+Delhi,Rohini,Apartment,1125,1,1.0,1,8.0,1.0,Semi-Furnished,14230000
+Mumbai,Navi Mumbai,Apartment,1011,1,1.0,1,3.0,3.0,Semi-Furnished,16230000
+Chennai,Velachery,Apartment,1265,3,3.0,1,9.0,1.0,Semi-Furnished,10540000
+Delhi,Rohini,Villa,1838,3,2.0,3,15.0,2.0,Unfurnished,21340000
+Delhi,Pitampura,Apartment,1319,2,1.0,1,21.0,1.0,Semi-Furnished,11840000
+Bangalore,Yelahanka,Builder Floor,1990,4,4.0,1,7.0,1.0,Semi-Furnished,16950000
+Bangalore,Koramangala,Apartment,1200,3,3.0,1,0.0,1.0,Semi-Furnished,13320000
+Chennai,Adyar,Villa,2110,3,3.0,2,18.0,1.0,Semi-Furnished,25170000
+Chennai,Mylapore,Apartment,1296,3,2.0,1,14.0,3.0,Unfurnished,8410000
+Mumbai,Dadar,Apartment,1576,3,3.0,1,9.0,0.0,Unfurnished,31820000
+Delhi,Saket,Independent House,905,2,2.0,1,17.0,2.0,Unfurnished,12740000
+Bangalore,Banashankari,Apartment,635,2,2.0,1,0.0,1.0,Semi-Furnished,5540000
+Chennai,Porur,Independent House,2626,4,4.0,3,5.0,2.0,Fully Furnished,35410000
+Delhi,Saket,Apartment,753,1,1.0,1,6.0,1.0,Unfurnished,10450000
+Mumbai,Borivali,Apartment,1721,4,3.0,1,29.0,1.0,Unfurnished,22180000
+Bangalore,Koramangala,Apartment,663,1,,1,21.0,2.0,Semi-Furnished,7440000
+Mumbai,Navi Mumbai,Apartment,1306,4,3.0,1,0.0,1.0,Semi-Furnished,24990000
+Hyderabad,Kondapur,Builder Floor,1478,3,3.0,2,7.0,2.0,Semi-Furnished,11050000
+Bangalore,Yelahanka,Independent House,917,2,2.0,2,5.0,3.0,Semi-Furnished,12450000
+Chennai,Guindy,Apartment,1263,3,3.0,1,26.0,0.0,Unfurnished,7220000
+Mumbai,Andheri,Villa,2516,6,6.0,2,18.0,2.0,Semi-Furnished,53210000
+Chennai,Anna Nagar,Apartment,1511,2,1.0,1,6.0,2.0,Semi-Furnished,13640000
+Chennai,T Nagar,Apartment,2001,3,3.0,1,13.0,3.0,Semi-Furnished,20130000
+Chennai,Mylapore,Apartment,1805,4,4.0,1,4.0,1.0,Unfurnished,15650000
+Mumbai,Navi Mumbai,Apartment,1375,4,4.0,1,7.0,2.0,Unfurnished,12810000
+Chennai,Anna Nagar,Apartment,987,2,2.0,1,7.0,1.0,Unfurnished,5840000
+Bangalore,Yelahanka,Apartment,1154,2,1.0,1,4.0,3.0,Fully Furnished,10400000
+Chennai,Porur,Apartment,1409,3,3.0,1,9.0,0.0,Unfurnished,6350000
+Delhi,Punjabi Bagh,Apartment,626,1,1.0,1,3.0,0.0,Unfurnished,7630000
+Chennai,Anna Nagar,Apartment,1830,3,3.0,1,10.0,1.0,Fully Furnished,11820000
+Pune,Wakad,Villa,1974,4,3.0,3,10.0,2.0,Unfurnished,14250000
+Bangalore,Marathahalli,Villa,1856,4,4.0,2,9.0,3.0,Semi-Furnished,20710000
+Bangalore,Marathahalli,Villa,3294,6,6.0,2,4.0,2.0,Unfurnished,39060000
+Bangalore,Electronic City,Apartment,1344,2,2.0,1,7.0,2.0,Unfurnished,12850000
+Delhi,Janakpuri,Villa,2307,3,3.0,3,3.0,2.0,Unfurnished,30490000
+Pune,Aundh,Independent House,1398,3,,1,12.0,2.0,Semi-Furnished,17690000
+Bangalore,Banashankari,Builder Floor,755,1,,1,13.0,0.0,Semi-Furnished,4090000
+Hyderabad,Gachibowli,Apartment,2155,4,4.0,1,19.0,2.0,Semi-Furnished,15530000
+Mumbai,Borivali,Villa,3796,5,5.0,2,8.0,3.0,Unfurnished,68880000
+Hyderabad,Banjara Hills,Independent House,2258,4,4.0,1,43.0,1.0,,15400000
+Delhi,Mayur Vihar,Builder Floor,1279,2,2.0,2,17.0,1.0,Semi-Furnished,9470000
+Chennai,Guindy,Independent House,800,3,2.0,1,3.0,3.0,Unfurnished,6860000
+Bangalore,Banashankari,Builder Floor,1047,1,1.0,3,3.0,2.0,Semi-Furnished,7640000
+Chennai,Tambaram,Apartment,1358,2,1.0,1,15.0,1.0,Unfurnished,5940000
+Hyderabad,Kukatpally,Builder Floor,1507,3,2.0,2,,1.0,Unfurnished,5870000
+Mumbai,Borivali,Apartment,1694,3,3.0,1,5.0,1.0,Semi-Furnished,18180000
+Bangalore,Hebbal,Apartment,1096,2,2.0,1,3.0,1.0,Unfurnished,8370000
+Pune,Viman Nagar,Apartment,789,1,1.0,1,14.0,1.0,Semi-Furnished,8390000
+Bangalore,Indiranagar,Apartment,894,2,2.0,1,3.0,1.0,Fully Furnished,12340000
+Hyderabad,Kondapur,Independent House,2249,3,3.0,2,1.0,2.0,Semi-Furnished,21040000
+Bangalore,Koramangala,Apartment,1531,3,3.0,1,2.0,1.0,Fully Furnished,18140000
+Hyderabad,Kukatpally,Builder Floor,1582,3,3.0,2,18.0,2.0,Unfurnished,7300000
+Mumbai,Powai,Apartment,1614,4,4.0,1,1.0,2.0,Unfurnished,27300000
+Bangalore,HSR Layout,Apartment,957,2,,1,43.0,1.0,Unfurnished,7540000
+Bangalore,Banashankari,Apartment,1763,3,2.0,1,10.0,1.0,Unfurnished,13010000
+Bangalore,Whitefield,Builder Floor,1287,2,2.0,2,13.0,3.0,Unfurnished,9260000
+Hyderabad,Kondapur,Builder Floor,1782,2,1.0,2,0.0,2.0,Fully Furnished,9100000
+Mumbai,Borivali,Apartment,1110,2,2.0,1,8.0,2.0,Unfurnished,17060000
+Chennai,Porur,Apartment,1517,2,2.0,1,6.0,3.0,Semi-Furnished,9390000
+Bangalore,HSR Layout,Builder Floor,1512,2,1.0,2,1.0,,Semi-Furnished,14160000
+Mumbai,Thane,Independent House,2139,4,4.0,2,3.0,2.0,Semi-Furnished,39520000
+Chennai,Mylapore,Independent House,1578,3,3.0,2,22.0,1.0,Unfurnished,16650000
+Pune,Aundh,Independent House,2642,5,4.0,2,7.0,1.0,Semi-Furnished,32650000
+Delhi,Pitampura,Apartment,808,2,2.0,1,1.0,0.0,Semi-Furnished,7720000
+Mumbai,Andheri,Apartment,1541,3,3.0,1,22.0,1.0,Unfurnished,26640000
+Bangalore,Marathahalli,Villa,2716,5,5.0,2,8.0,2.0,Fully Furnished,43060000
+Delhi,Janakpuri,Apartment,1285,2,1.0,1,8.0,1.0,Semi-Furnished,12550000
+Bangalore,Electronic City,Independent House,805,1,1.0,2,5.0,2.0,Semi-Furnished,7880000
+Hyderabad,Gachibowli,Apartment,500,1,1.0,1,1.0,3.0,Semi-Furnished,4600000
+Hyderabad,Jubilee Hills,Villa,3172,6,6.0,2,5.0,2.0,Fully Furnished,42640000
+Bangalore,Banashankari,Builder Floor,1595,2,2.0,2,8.0,2.0,Semi-Furnished,10790000
+Pune,Hadapsar,Villa,2604,6,6.0,2,7.0,2.0,Semi-Furnished,25410000
+Chennai,Anna Nagar,Apartment,2102,4,3.0,1,8.0,1.0,Semi-Furnished,14480000
+Mumbai,Dadar,Apartment,1924,5,4.0,1,16.0,1.0,,40890000
+Bangalore,Banashankari,Villa,1648,4,4.0,2,13.0,2.0,Unfurnished,19700000
+Mumbai,Navi Mumbai,Apartment,1330,3,3.0,1,10.0,3.0,Fully Furnished,24030000
+Mumbai,Andheri,Independent House,1491,2,2.0,3,2.0,2.0,Unfurnished,22370000
+Mumbai,Bandra,Builder Floor,1204,3,3.0,1,3.0,1.0,Fully Furnished,27350000
+Chennai,Velachery,Independent House,2475,4,4.0,1,5.0,2.0,Semi-Furnished,24400000
+Bangalore,Koramangala,Villa,3388,6,6.0,3,18.0,3.0,Semi-Furnished,39440000
+Bangalore,Jayanagar,Apartment,882,2,2.0,1,5.0,1.0,Unfurnished,9590000
+Delhi,Pitampura,Apartment,1663,3,3.0,1,7.0,,Semi-Furnished,18920000
+Chennai,T Nagar,Apartment,1206,3,3.0,1,40.0,1.0,Unfurnished,9480000
+Chennai,Velachery,Apartment,2239,3,,1,0.0,1.0,Semi-Furnished,17090000
+Chennai,T Nagar,Independent House,2083,4,4.0,3,5.0,3.0,Fully Furnished,26550000
+Chennai,ECR,Apartment,1184,3,2.0,1,3.0,2.0,Unfurnished,12860000
+Bangalore,Hebbal,Apartment,1564,4,4.0,1,13.0,1.0,Semi-Furnished,11090000
+Chennai,ECR,Apartment,1254,3,2.0,1,5.0,2.0,Semi-Furnished,13530000
+Chennai,Guindy,Apartment,829,2,2.0,1,17.0,0.0,Unfurnished,5990000
+Bangalore,Electronic City,Apartment,1086,2,1.0,1,19.0,1.0,Unfurnished,9300000
+Mumbai,Dadar,Villa,1576,3,3.0,2,7.0,1.0,Semi-Furnished,43530000
+Bangalore,Koramangala,Builder Floor,1287,3,3.0,2,13.0,2.0,Semi-Furnished,9310000
+Delhi,Greater Kailash,Apartment,1269,3,2.0,1,13.0,1.0,Semi-Furnished,17060000
+Chennai,ECR,Builder Floor,1100,2,2.0,2,10.0,2.0,Unfurnished,8690000
+Chennai,Mylapore,Villa,2894,6,5.0,3,23.0,3.0,Semi-Furnished,27270000
+Chennai,Porur,Villa,2680,6,6.0,2,3.0,1.0,Unfurnished,27420000
+Mumbai,Thane,Independent House,1005,3,3.0,1,3.0,2.0,Semi-Furnished,23420000
+Hyderabad,Gachibowli,Builder Floor,2078,3,3.0,3,0.0,2.0,Unfurnished,11960000
+Chennai,Guindy,Apartment,1002,2,2.0,1,9.0,1.0,Unfurnished,6210000
+Delhi,Punjabi Bagh,Builder Floor,1361,3,3.0,1,6.0,1.0,Semi-Furnished,20040000
+Mumbai,Thane,Apartment,622,2,2.0,1,12.0,0.0,Unfurnished,6500000
+Chennai,ECR,Apartment,500,1,1.0,1,20.0,2.0,Semi-Furnished,5160000
+Mumbai,Malad,Builder Floor,1578,3,2.0,1,2.0,1.0,Unfurnished,28650000
+Bangalore,Jayanagar,Apartment,985,3,3.0,1,6.0,0.0,Unfurnished,9370000
+Bangalore,Yelahanka,Independent House,1994,4,4.0,2,1.0,2.0,Unfurnished,19580000
+Pune,Hinjewadi,Apartment,1057,1,1.0,1,7.0,1.0,Unfurnished,8430000
+Mumbai,Navi Mumbai,Independent House,1987,5,4.0,1,0.0,2.0,Unfurnished,36890000
+Bangalore,Whitefield,Apartment,892,1,1.0,1,3.0,3.0,Unfurnished,7560000
+Bangalore,Koramangala,Villa,2109,4,3.0,3,12.0,2.0,Semi-Furnished,25370000
+Delhi,Greater Kailash,Apartment,1306,4,3.0,1,0.0,1.0,Semi-Furnished,16010000
+Bangalore,Yelahanka,Apartment,1948,3,3.0,1,40.0,1.0,Unfurnished,12550000
+Chennai,Porur,Apartment,1412,2,2.0,1,7.0,2.0,Unfurnished,9310000
+Hyderabad,Begumpet,Builder Floor,914,1,1.0,2,3.0,1.0,Semi-Furnished,6400000
+Mumbai,Goregaon,Apartment,1108,1,1.0,1,16.0,0.0,Fully Furnished,12590000
+Delhi,Saket,Independent House,1568,3,2.0,2,0.0,1.0,Semi-Furnished,24680000
+Delhi,Lajpat Nagar,Apartment,1079,2,1.0,1,15.0,1.0,Unfurnished,10690000
+Bangalore,Indiranagar,Villa,2575,5,5.0,2,4.0,2.0,Fully Furnished,50290000
+Mumbai,Navi Mumbai,Builder Floor,1481,2,1.0,1,0.0,1.0,Unfurnished,30120000
+Chennai,T Nagar,Independent House,2328,4,3.0,2,4.0,1.0,Fully Furnished,30250000
+Mumbai,Dadar,Apartment,1230,3,3.0,1,1.0,1.0,Semi-Furnished,24840000
+Bangalore,Marathahalli,Apartment,877,1,1.0,1,9.0,1.0,Unfurnished,7140000
+Bangalore,Whitefield,Builder Floor,875,2,2.0,3,8.0,0.0,Unfurnished,8250000
+Bangalore,Electronic City,Apartment,1261,4,3.0,1,11.0,1.0,Unfurnished,9770000
+Mumbai,Goregaon,Villa,2110,4,3.0,2,,2.0,Semi-Furnished,38090000
+Chennai,Porur,Independent House,2192,3,2.0,2,24.0,2.0,Fully Furnished,13530000
+Delhi,Rohini,Independent House,1026,2,1.0,3,7.0,2.0,Unfurnished,12530000
+Chennai,ECR,Villa,2236,4,3.0,3,0.0,2.0,Semi-Furnished,36240000
+Bangalore,Indiranagar,Apartment,943,2,2.0,1,1.0,1.0,Semi-Furnished,10280000
+Chennai,Porur,Apartment,798,1,1.0,1,43.0,1.0,Semi-Furnished,4000000
+Pune,Kharadi,Builder Floor,1771,2,1.0,2,3.0,1.0,Unfurnished,12660000
+Bangalore,Jayanagar,Villa,2421,3,3.0,2,9.0,3.0,Unfurnished,34940000
+Bangalore,HSR Layout,Villa,1693,2,1.0,2,9.0,2.0,Semi-Furnished,25520000
+Bangalore,Whitefield,Independent House,2009,4,3.0,1,12.0,3.0,Semi-Furnished,21560000
+Bangalore,Marathahalli,Villa,2663,5,4.0,2,7.0,2.0,Semi-Furnished,35030000
+Chennai,ECR,Apartment,1366,4,3.0,1,6.0,2.0,Fully Furnished,13900000
+Hyderabad,Kukatpally,Apartment,644,1,1.0,1,3.0,0.0,Unfurnished,3860000
+Mumbai,Andheri,Apartment,728,1,1.0,1,29.0,,Unfurnished,8940000
+Chennai,Adyar,Villa,2759,5,5.0,2,1.0,2.0,Semi-Furnished,37770000
+Hyderabad,HITEC City,Independent House,2610,4,4.0,3,0.0,2.0,Fully Furnished,23080000
+Bangalore,Banashankari,Independent House,2771,5,4.0,3,2.0,1.0,Semi-Furnished,18120000
+Chennai,T Nagar,Apartment,1882,4,3.0,1,0.0,3.0,Fully Furnished,21250000
+Bangalore,Jayanagar,Independent House,2135,4,4.0,2,0.0,1.0,Unfurnished,28350000
+Pune,Hinjewadi,Builder Floor,1763,3,2.0,2,0.0,1.0,Semi-Furnished,12190000
+Hyderabad,Kukatpally,Apartment,575,2,2.0,1,20.0,2.0,Semi-Furnished,4570000
+Hyderabad,Banjara Hills,Apartment,1213,3,3.0,1,5.0,3.0,Fully Furnished,12150000
+Mumbai,Andheri,Independent House,2061,4,3.0,2,6.0,2.0,Fully Furnished,34590000
+Pune,Baner,Apartment,974,2,1.0,1,6.0,1.0,Unfurnished,6700000
+Delhi,Dwarka,Builder Floor,1501,3,3.0,3,5.0,1.0,Unfurnished,11200000
+Chennai,T Nagar,Independent House,1774,2,,3,19.0,2.0,Unfurnished,17780000
+Pune,Pimpri,Independent House,1712,2,2.0,1,18.0,1.0,Fully Furnished,11940000
+Delhi,Lajpat Nagar,Independent House,2603,6,6.0,2,27.0,2.0,Unfurnished,17960000
+Delhi,Mayur Vihar,Apartment,782,2,2.0,1,12.0,1.0,Fully Furnished,8230000
+Chennai,Guindy,Apartment,1290,2,2.0,1,,2.0,Unfurnished,10010000
+Delhi,Rohini,Builder Floor,1452,2,1.0,2,11.0,2.0,Unfurnished,10140000
+Chennai,ECR,Apartment,1379,3,3.0,1,3.0,1.0,Fully Furnished,16450000
+Pune,Kharadi,Villa,3039,5,4.0,2,0.0,1.0,Unfurnished,21520000
+Bangalore,Whitefield,Apartment,587,1,1.0,1,5.0,2.0,Unfurnished,5370000
+Chennai,Adyar,Independent House,1959,4,3.0,2,4.0,1.0,Unfurnished,22080000
+Chennai,OMR,Apartment,1827,3,2.0,1,3.0,2.0,Fully Furnished,13050000
+Pune,Kharadi,Independent House,1547,3,3.0,2,8.0,2.0,Unfurnished,12260000
+Mumbai,Dadar,Apartment,1392,2,2.0,1,2.0,0.0,Semi-Furnished,35320000
+Mumbai,Andheri,Apartment,1388,2,2.0,1,12.0,2.0,Fully Furnished,25740000
+Chennai,Mylapore,Villa,2515,5,,2,15.0,1.0,Unfurnished,28070000
+Pune,Kothrud,Apartment,1876,3,,1,21.0,1.0,Semi-Furnished,10880000
+Delhi,Greater Kailash,Apartment,1808,3,3.0,1,3.0,1.0,Fully Furnished,25250000
+Chennai,Guindy,Independent House,2158,4,,2,15.0,2.0,Semi-Furnished,15750000
+Mumbai,Dadar,Apartment,525,1,,1,10.0,2.0,Semi-Furnished,11890000
+Pune,Aundh,Apartment,841,3,2.0,1,0.0,2.0,Semi-Furnished,9960000
+Hyderabad,Begumpet,Villa,2409,4,4.0,3,0.0,2.0,Semi-Furnished,26740000
+Mumbai,Dadar,Independent House,1592,3,3.0,1,26.0,1.0,Semi-Furnished,33700000
+Hyderabad,Jubilee Hills,Villa,2666,5,5.0,3,5.0,2.0,Unfurnished,25110000
+Hyderabad,HITEC City,Independent House,1693,2,1.0,1,11.0,3.0,Unfurnished,13240000
+Mumbai,Worli,Apartment,1988,3,3.0,1,36.0,1.0,Unfurnished,26910000
+Bangalore,Indiranagar,Independent House,3577,5,5.0,1,1.0,2.0,Unfurnished,44430000
+Chennai,ECR,Independent House,1634,4,4.0,3,22.0,3.0,Semi-Furnished,11830000
+Hyderabad,Kukatpally,Villa,3348,5,5.0,2,9.0,2.0,Unfurnished,27910000
+Chennai,Tambaram,Villa,2964,4,3.0,2,1.0,3.0,Semi-Furnished,32090000
+Delhi,Janakpuri,Villa,2674,5,4.0,2,1.0,2.0,Unfurnished,39180000
+Delhi,Greater Kailash,Independent House,1744,3,3.0,2,15.0,3.0,Unfurnished,20350000
+Pune,Baner,Independent House,2779,6,6.0,3,1.0,1.0,Unfurnished,29680000
+Pune,Magarpatta,Villa,3032,6,6.0,2,11.0,2.0,Semi-Furnished,31030000
+Bangalore,Jayanagar,Apartment,1674,3,3.0,1,11.0,1.0,Semi-Furnished,14040000
+Pune,Hinjewadi,Independent House,2756,4,4.0,3,18.0,3.0,Semi-Furnished,22210000
+Bangalore,Indiranagar,Builder Floor,1718,3,3.0,2,11.0,2.0,Unfurnished,15810000
+Bangalore,Jayanagar,Apartment,1563,2,2.0,1,10.0,1.0,Unfurnished,13900000
+Pune,Magarpatta,Apartment,1289,3,3.0,1,12.0,1.0,Unfurnished,5830000
+Mumbai,Borivali,Apartment,1890,4,3.0,1,4.0,1.0,Unfurnished,28210000
+Bangalore,Whitefield,Apartment,1325,3,3.0,1,0.0,1.0,Fully Furnished,9810000
+Bangalore,Hebbal,Apartment,986,3,3.0,1,7.0,1.0,Unfurnished,7050000
+Pune,Baner,Villa,1500,2,2.0,3,3.0,1.0,Semi-Furnished,18790000
+Pune,Hinjewadi,Builder Floor,1501,3,3.0,2,6.0,1.0,Semi-Furnished,9290000
+Bangalore,Koramangala,Apartment,1494,2,1.0,1,33.0,1.0,Fully Furnished,13120000
+Chennai,ECR,Villa,2392,3,3.0,3,1.0,1.0,Semi-Furnished,30570000
+Delhi,Greater Kailash,Apartment,1575,3,2.0,1,13.0,0.0,Fully Furnished,24110000
+Hyderabad,Kondapur,Builder Floor,1430,3,,2,10.0,0.0,Unfurnished,8980000
+Chennai,Anna Nagar,Independent House,1745,2,1.0,2,17.0,2.0,Fully Furnished,12190000
+Pune,Pimpri,Apartment,1049,3,2.0,1,1.0,3.0,Semi-Furnished,10140000
+Chennai,T Nagar,Independent House,1114,2,1.0,3,31.0,2.0,Unfurnished,7420000
+Chennai,T Nagar,Independent House,1424,3,2.0,2,4.0,2.0,Unfurnished,15630000
+Bangalore,Banashankari,Apartment,898,2,2.0,1,18.0,0.0,Unfurnished,6970000
+Chennai,OMR,Apartment,1150,2,1.0,1,6.0,1.0,Unfurnished,8550000
+Delhi,Pitampura,Independent House,1893,4,4.0,1,8.0,2.0,Semi-Furnished,21340000
+Chennai,Porur,Villa,3097,5,4.0,3,3.0,2.0,Semi-Furnished,42330000
+Delhi,Vasant Kunj,Independent House,2119,4,3.0,1,10.0,3.0,Unfurnished,24640000
+Mumbai,Powai,Apartment,1549,3,3.0,1,4.0,2.0,Unfurnished,23000000
+Chennai,T Nagar,Villa,2897,4,4.0,3,3.0,2.0,Fully Furnished,46670000
+Chennai,OMR,Builder Floor,1429,3,3.0,1,23.0,3.0,Fully Furnished,9890000
+Pune,Viman Nagar,Villa,1873,3,3.0,3,13.0,2.0,Unfurnished,25190000
+Bangalore,Jayanagar,Apartment,1611,4,3.0,1,14.0,2.0,Semi-Furnished,13220000
+Bangalore,HSR Layout,Apartment,1409,3,3.0,1,8.0,2.0,Unfurnished,12900000
+Pune,Magarpatta,Apartment,936,3,3.0,1,3.0,2.0,Unfurnished,6870000
+Chennai,Porur,Apartment,1599,3,3.0,1,3.0,1.0,Semi-Furnished,11810000
+Mumbai,Thane,Villa,1500,4,3.0,3,2.0,2.0,Fully Furnished,39100000
+Delhi,Greater Kailash,Independent House,2081,4,3.0,3,1.0,1.0,Fully Furnished,31780000
+Bangalore,Marathahalli,Apartment,1595,3,3.0,1,29.0,1.0,Semi-Furnished,11280000
+Bangalore,Hebbal,Independent House,2060,3,2.0,3,2.0,,Fully Furnished,14660000
+Bangalore,Hebbal,Apartment,1408,3,2.0,1,3.0,1.0,Fully Furnished,11920000
+Mumbai,Borivali,Apartment,1732,3,2.0,1,44.0,1.0,Semi-Furnished,18440000
+Pune,Kharadi,Apartment,824,3,2.0,1,3.0,1.0,Fully Furnished,5720000
+Mumbai,Malad,Villa,2778,4,4.0,3,4.0,1.0,Semi-Furnished,65240000
+Chennai,OMR,Apartment,545,2,2.0,1,10.0,2.0,Semi-Furnished,4970000
+Pune,Hinjewadi,Apartment,953,3,3.0,1,0.0,0.0,Unfurnished,6920000
+Delhi,Dwarka,Apartment,523,1,1.0,1,11.0,1.0,Semi-Furnished,5750000
+Pune,Wakad,Villa,1767,2,2.0,3,14.0,1.0,Unfurnished,14680000
+Chennai,Anna Nagar,Apartment,1745,3,2.0,1,12.0,2.0,Unfurnished,13930000
+Chennai,Mylapore,Apartment,988,2,2.0,1,28.0,1.0,Semi-Furnished,9230000
+Pune,Viman Nagar,Builder Floor,895,2,1.0,3,21.0,2.0,Semi-Furnished,8670000
+Bangalore,Marathahalli,Apartment,1003,2,2.0,1,8.0,1.0,Semi-Furnished,6010000
+Hyderabad,Madhapur,Builder Floor,1202,3,2.0,2,16.0,2.0,Semi-Furnished,12330000
+Pune,Kothrud,Apartment,1389,3,2.0,1,2.0,2.0,Semi-Furnished,11710000
+Pune,Viman Nagar,Apartment,500,1,1.0,1,7.0,2.0,Fully Furnished,6030000
+Bangalore,Koramangala,Villa,2891,4,3.0,3,3.0,2.0,Unfurnished,29040000
+Chennai,Anna Nagar,Independent House,2360,5,5.0,2,5.0,1.0,Unfurnished,19850000
+Bangalore,Indiranagar,Independent House,1534,3,2.0,1,16.0,1.0,Fully Furnished,18880000
+Delhi,Janakpuri,Apartment,841,2,2.0,1,4.0,2.0,Unfurnished,7840000
+Hyderabad,Gachibowli,Independent House,0,3,2.0,2,31.0,2.0,Fully Furnished,18480000
+Mumbai,Bandra,Apartment,1134,3,3.0,1,7.0,0.0,Unfurnished,18150000
+Mumbai,Bandra,Villa,2833,5,5.0,2,14.0,,Semi-Furnished,80010000
+Pune,Magarpatta,Apartment,935,2,2.0,1,0.0,3.0,Fully Furnished,9600000
+Bangalore,HSR Layout,Independent House,2137,3,3.0,1,1.0,1.0,Semi-Furnished,28160000
+Delhi,Mayur Vihar,Independent House,1509,2,2.0,2,19.0,2.0,Semi-Furnished,16070000
+Chennai,Tambaram,Villa,1718,4,3.0,2,3.0,2.0,Semi-Furnished,12130000
+Bangalore,Indiranagar,Apartment,1471,3,3.0,1,6.0,,Unfurnished,17430000
+Chennai,Tambaram,Villa,2634,5,4.0,3,3.0,1.0,Fully Furnished,32740000
+Pune,Pimpri,Villa,1924,3,2.0,2,17.0,2.0,Unfurnished,15130000
+Mumbai,Goregaon,Independent House,1068,1,1.0,2,5.0,1.0,Fully Furnished,19250000
+Delhi,Greater Kailash,Independent House,1488,3,2.0,2,3.0,1.0,Semi-Furnished,20070000
+Delhi,Dwarka,Independent House,1916,4,4.0,1,6.0,2.0,,26510000
+Bangalore,Electronic City,Independent House,1720,4,4.0,2,2.0,3.0,Semi-Furnished,15030000
+Bangalore,Jayanagar,Villa,2708,4,4.0,3,31.0,1.0,Semi-Furnished,29980000
+Delhi,Pitampura,Apartment,500,1,1.0,1,14.0,2.0,Fully Furnished,5240000
+Bangalore,Jayanagar,Independent House,2517,5,5.0,1,21.0,2.0,Fully Furnished,31230000
+Mumbai,Powai,Apartment,1462,2,1.0,1,20.0,1.0,Unfurnished,29680000
+Chennai,Velachery,Independent House,1835,3,2.0,3,6.0,2.0,Unfurnished,14320000
+Delhi,Lajpat Nagar,Villa,3346,5,4.0,3,2.0,2.0,Semi-Furnished,43050000
+Bangalore,Hebbal,Villa,1682,3,3.0,3,,3.0,Fully Furnished,18720000
+Chennai,OMR,Apartment,1494,3,2.0,1,5.0,2.0,Semi-Furnished,9890000
+Mumbai,Powai,Independent House,2022,3,2.0,2,3.0,1.0,Fully Furnished,59110000
+Delhi,Rohini,Apartment,1088,2,2.0,1,8.0,1.0,Unfurnished,7180000
+Chennai,ECR,Apartment,1254,3,2.0,1,5.0,2.0,Semi-Furnished,13530000
+Hyderabad,Begumpet,Independent House,2362,3,3.0,2,1.0,2.0,Unfurnished,17170000
+Chennai,Anna Nagar,Villa,3245,4,3.0,3,15.0,1.0,Unfurnished,30160000
+Chennai,T Nagar,Apartment,1747,3,2.0,1,2.0,1.0,Unfurnished,15980000
+Hyderabad,Jubilee Hills,Independent House,2620,4,4.0,2,17.0,1.0,Semi-Furnished,22860000
+Mumbai,Worli,Builder Floor,1246,2,2.0,2,3.0,0.0,Semi-Furnished,29790000
+Chennai,Tambaram,Independent House,1494,3,3.0,1,5.0,2.0,Unfurnished,16470000
+Chennai,Guindy,Independent House,1792,2,2.0,2,28.0,1.0,Semi-Furnished,13260000
+Bangalore,Koramangala,Villa,1824,4,4.0,2,15.0,2.0,Semi-Furnished,29240000
+Mumbai,Powai,Apartment,1097,2,1.0,1,44.0,1.0,Unfurnished,11240000
+Hyderabad,Kukatpally,Apartment,1270,2,2.0,1,12.0,0.0,Semi-Furnished,8010000
+Bangalore,HSR Layout,Apartment,998,2,1.0,1,30.0,1.0,Unfurnished,7970000
+Chennai,Adyar,Villa,2260,5,4.0,3,7.0,3.0,Fully Furnished,34970000
+Bangalore,Electronic City,Apartment,1353,4,4.0,1,0.0,0.0,Semi-Furnished,15400000
+Mumbai,Bandra,Villa,1500,4,4.0,2,8.0,3.0,Unfurnished,37640000
+Mumbai,Thane,Independent House,1771,4,3.0,2,5.0,3.0,Semi-Furnished,33360000
+Chennai,OMR,Builder Floor,1820,3,3.0,2,27.0,2.0,Fully Furnished,15830000
+Bangalore,Koramangala,Apartment,1189,2,1.0,1,5.0,1.0,Semi-Furnished,15310000
+Bangalore,Banashankari,Independent House,1450,4,3.0,1,3.0,3.0,Semi-Furnished,13620000
+Hyderabad,HITEC City,Apartment,1148,1,1.0,1,5.0,2.0,Semi-Furnished,9720000
+Chennai,OMR,Independent House,1803,4,4.0,1,3.0,,Fully Furnished,11510000
+Chennai,Mylapore,Apartment,1457,2,1.0,1,14.0,0.0,Fully Furnished,15210000
+Hyderabad,Jubilee Hills,Independent House,1328,3,3.0,2,17.0,3.0,Fully Furnished,11500000
+Bangalore,Electronic City,Villa,3491,5,4.0,2,4.0,1.0,Fully Furnished,39360000
+Pune,Hinjewadi,Builder Floor,938,2,1.0,2,16.0,2.0,Semi-Furnished,6420000
+Bangalore,Marathahalli,Apartment,500,1,1.0,1,19.0,1.0,Fully Furnished,4310000
+Chennai,Anna Nagar,Apartment,632,1,1.0,1,2.0,1.0,Fully Furnished,6010000
+Chennai,ECR,Apartment,0,3,2.0,1,1.0,2.0,Semi-Furnished,22600000
+Bangalore,Yelahanka,Independent House,1628,4,3.0,3,0.0,2.0,,17640000
+Mumbai,Powai,Apartment,1266,3,2.0,1,3.0,1.0,,27860000
+Delhi,Vasant Kunj,Independent House,1478,3,3.0,3,8.0,1.0,,23020000
+Delhi,Lajpat Nagar,Villa,1741,3,2.0,3,17.0,1.0,Unfurnished,23860000
+Mumbai,Goregaon,Independent House,1610,2,1.0,2,2.0,2.0,Semi-Furnished,29970000
+Chennai,OMR,Apartment,1556,4,4.0,1,0.0,1.0,Semi-Furnished,12130000
+Chennai,Adyar,Apartment,893,1,1.0,1,1.0,1.0,Semi-Furnished,7920000
+Chennai,T Nagar,Independent House,2336,3,2.0,2,3.0,1.0,Semi-Furnished,32030000
+Delhi,Mayur Vihar,Independent House,1695,2,1.0,1,12.0,2.0,Unfurnished,16350000
+Hyderabad,Begumpet,Villa,2131,5,4.0,2,2.0,2.0,Unfurnished,14000000
+Chennai,Adyar,Apartment,1925,4,4.0,1,4.0,2.0,Semi-Furnished,18050000
+Delhi,Greater Kailash,Independent House,2052,4,4.0,2,0.0,1.0,Unfurnished,33780000
+Chennai,Tambaram,Apartment,1733,2,1.0,1,9.0,1.0,Semi-Furnished,15420000
+Hyderabad,HITEC City,Builder Floor,1497,3,2.0,2,2.0,1.0,Fully Furnished,11590000
+Chennai,Anna Nagar,Apartment,1574,3,3.0,1,2.0,1.0,Unfurnished,14710000
+Delhi,Mayur Vihar,Apartment,1276,4,4.0,1,18.0,0.0,Unfurnished,7750000
+Mumbai,Thane,Apartment,1658,3,2.0,1,18.0,1.0,Semi-Furnished,25030000
+Mumbai,Andheri,Apartment,997,2,2.0,1,2.0,1.0,Semi-Furnished,15550000
+Pune,Viman Nagar,Apartment,1299,3,3.0,1,0.0,1.0,Semi-Furnished,11870000
+Chennai,OMR,Builder Floor,1858,5,4.0,3,10.0,1.0,Semi-Furnished,13550000
+Chennai,Anna Nagar,Builder Floor,1355,3,3.0,2,17.0,1.0,Semi-Furnished,11160000
+Delhi,Punjabi Bagh,Independent House,2278,3,3.0,2,0.0,1.0,Unfurnished,27080000
+Mumbai,Worli,Villa,2482,4,3.0,2,6.0,2.0,Unfurnished,72870000
+Bangalore,Hebbal,Independent House,1448,2,1.0,2,0.0,1.0,Unfurnished,15670000
+Chennai,Porur,Villa,2679,5,5.0,2,6.0,1.0,Semi-Furnished,35190000
+Mumbai,Malad,Villa,1500,2,1.0,3,1.0,1.0,Semi-Furnished,35420000
+Bangalore,Indiranagar,Apartment,1415,2,1.0,1,0.0,1.0,Unfurnished,19390000
+Bangalore,Yelahanka,Villa,2876,4,3.0,2,0.0,3.0,Unfurnished,34890000
+Chennai,Mylapore,Apartment,1411,3,2.0,1,4.0,1.0,Unfurnished,12990000
+Mumbai,Goregaon,Builder Floor,1423,4,4.0,2,3.0,3.0,Fully Furnished,22260000
+Chennai,Porur,Independent House,2402,4,4.0,3,17.0,2.0,Unfurnished,17470000
+Chennai,Tambaram,Builder Floor,959,3,3.0,2,44.0,2.0,Semi-Furnished,4110000
+Mumbai,Thane,Apartment,1219,4,4.0,1,1.0,1.0,Fully Furnished,18010000
+Chennai,ECR,Villa,2787,5,5.0,3,12.0,2.0,Semi-Furnished,36580000
+Mumbai,Dadar,Apartment,1355,3,2.0,1,4.0,1.0,Semi-Furnished,24370000
+Bangalore,Hebbal,Apartment,1546,2,1.0,1,0.0,1.0,Fully Furnished,17570000
+Mumbai,Powai,Apartment,500,1,1.0,1,0.0,1.0,Semi-Furnished,7510000
+Bangalore,Yelahanka,Apartment,1060,3,,1,15.0,1.0,Semi-Furnished,6930000
+Hyderabad,Secunderabad,Villa,3194,6,6.0,3,1.0,3.0,Semi-Furnished,28930000
+Bangalore,Marathahalli,Apartment,785,1,1.0,1,0.0,2.0,Semi-Furnished,7820000
+Chennai,Velachery,Villa,2390,5,4.0,3,13.0,1.0,Unfurnished,26220000
+Mumbai,Worli,Apartment,941,2,2.0,1,0.0,1.0,Fully Furnished,18520000
+Chennai,Velachery,Apartment,545,1,1.0,1,12.0,1.0,Fully Furnished,5330000
+Mumbai,Thane,Independent House,1990,4,3.0,1,7.0,2.0,Unfurnished,25710000
+Bangalore,HSR Layout,Apartment,1306,3,3.0,1,17.0,3.0,Fully Furnished,15550000
+Delhi,Lajpat Nagar,Independent House,1495,3,3.0,2,9.0,1.0,Semi-Furnished,18460000
+Pune,Baner,Independent House,800,2,2.0,1,0.0,2.0,Unfurnished,11400000
+Chennai,Tambaram,Independent House,1592,4,4.0,1,23.0,1.0,Fully Furnished,16450000
+Bangalore,Yelahanka,Villa,2530,5,5.0,2,6.0,2.0,Fully Furnished,38520000
+Delhi,Saket,Builder Floor,1520,2,2.0,2,6.0,1.0,Semi-Furnished,23140000
+Bangalore,Indiranagar,Villa,2575,5,5.0,2,4.0,2.0,Fully Furnished,50290000
+Chennai,Adyar,Independent House,2309,4,4.0,2,1.0,3.0,Semi-Furnished,23450000
+Chennai,Tambaram,Builder Floor,1437,3,3.0,1,13.0,1.0,Semi-Furnished,11340000
+Hyderabad,Kondapur,Apartment,1139,2,2.0,1,3.0,1.0,Semi-Furnished,8340000
+Chennai,Guindy,Apartment,1715,3,3.0,1,1.0,0.0,Semi-Furnished,14120000
+Bangalore,Hebbal,Villa,2627,5,5.0,3,20.0,2.0,Unfurnished,23960000
+Mumbai,Powai,Apartment,1400,4,4.0,1,2.0,1.0,Fully Furnished,27870000
+Pune,Aundh,Apartment,500,1,1.0,1,7.0,1.0,Fully Furnished,3970000
+Pune,Hinjewadi,Independent House,2020,3,3.0,2,33.0,1.0,Unfurnished,10750000
+Chennai,OMR,Builder Floor,1315,2,1.0,2,48.0,0.0,Unfurnished,4560000
+Mumbai,Malad,Apartment,1982,4,3.0,1,1.0,1.0,Semi-Furnished,32460000
+Hyderabad,Gachibowli,Apartment,1039,1,,1,8.0,2.0,Fully Furnished,10420000
+Mumbai,Malad,Apartment,1013,2,2.0,1,13.0,0.0,Fully Furnished,15200000
+Chennai,Adyar,Villa,2257,4,4.0,3,13.0,2.0,,31580000
+Delhi,Dwarka,Apartment,976,1,1.0,1,9.0,2.0,Fully Furnished,10630000
+Bangalore,Hebbal,Villa,1906,4,4.0,3,2.0,,Semi-Furnished,21070000
+Hyderabad,Banjara Hills,Villa,1965,5,4.0,2,5.0,2.0,Fully Furnished,25630000
+Pune,Wakad,Apartment,1083,2,1.0,1,19.0,3.0,Unfurnished,7690000
+Bangalore,Koramangala,Independent House,1447,2,1.0,2,35.0,2.0,Unfurnished,12970000
+Pune,Kothrud,Independent House,2295,4,3.0,3,13.0,2.0,Semi-Furnished,25150000
+Bangalore,Hebbal,Apartment,1607,3,2.0,1,8.0,1.0,Semi-Furnished,12650000
+Chennai,OMR,Apartment,500,1,1.0,1,21.0,3.0,Unfurnished,3440000
+Bangalore,Electronic City,Apartment,1146,2,2.0,1,27.0,0.0,Fully Furnished,7250000
+Delhi,Lajpat Nagar,Apartment,1143,2,2.0,1,24.0,1.0,Semi-Furnished,11920000
+Bangalore,Jayanagar,Apartment,594,2,1.0,1,19.0,1.0,Fully Furnished,5610000
+Bangalore,Electronic City,Apartment,1291,2,2.0,1,4.0,1.0,Unfurnished,10910000
+Chennai,Velachery,Apartment,1452,4,4.0,1,11.0,3.0,Unfurnished,9610000
+Mumbai,Powai,Builder Floor,976,3,2.0,2,12.0,1.0,Unfurnished,16690000
+Delhi,Rohini,Villa,2259,4,4.0,2,10.0,3.0,Fully Furnished,44600000
+Bangalore,Koramangala,Independent House,800,2,1.0,2,18.0,3.0,Unfurnished,7980000
+Pune,Kothrud,Apartment,1762,3,3.0,1,9.0,0.0,Semi-Furnished,13160000
+Bangalore,Koramangala,Apartment,852,2,2.0,1,11.0,0.0,Semi-Furnished,10120000
+Mumbai,Dadar,Apartment,891,1,1.0,1,9.0,0.0,Fully Furnished,17770000
+Bangalore,Marathahalli,Independent House,1875,3,3.0,2,10.0,2.0,Fully Furnished,17340000
+Bangalore,Banashankari,Villa,2857,6,6.0,3,2.0,2.0,Semi-Furnished,39300000
+Chennai,Mylapore,Apartment,589,1,1.0,1,5.0,1.0,Semi-Furnished,5110000
+Chennai,Anna Nagar,Apartment,1373,4,3.0,1,1.0,0.0,Semi-Furnished,7590000
+Bangalore,Hebbal,Independent House,1191,2,1.0,1,7.0,3.0,Unfurnished,12260000
+Chennai,ECR,Apartment,1496,3,2.0,1,7.0,2.0,Fully Furnished,19140000
+Pune,Hinjewadi,Apartment,1380,3,3.0,1,17.0,0.0,Fully Furnished,11090000
+Delhi,Pitampura,Independent House,800,3,2.0,3,11.0,1.0,Unfurnished,6460000
+Hyderabad,Gachibowli,Apartment,2000,4,3.0,1,7.0,2.0,Semi-Furnished,15560000
+Delhi,Janakpuri,Independent House,2700,6,6.0,1,16.0,1.0,Fully Furnished,31970000
+Chennai,Velachery,Builder Floor,1708,4,3.0,2,18.0,,Semi-Furnished,11580000
+Pune,Hinjewadi,Apartment,1716,3,2.0,1,0.0,2.0,Unfurnished,9100000
+Delhi,Pitampura,Villa,2182,4,4.0,2,30.0,2.0,Unfurnished,20570000
+Pune,Baner,Apartment,974,2,1.0,1,6.0,1.0,Unfurnished,6700000
+Bangalore,Banashankari,Apartment,1240,2,2.0,1,20.0,1.0,Unfurnished,9310000
+Bangalore,HSR Layout,Independent House,2544,4,4.0,2,8.0,1.0,Fully Furnished,31180000
+Hyderabad,Madhapur,Independent House,2220,3,3.0,2,4.0,2.0,Unfurnished,20150000
+Chennai,Anna Nagar,Apartment,1011,2,2.0,1,0.0,3.0,Unfurnished,10810000
+Mumbai,Navi Mumbai,Apartment,919,2,1.0,1,6.0,2.0,Semi-Furnished,15990000
+Bangalore,Yelahanka,Apartment,1393,3,3.0,1,11.0,3.0,Unfurnished,11370000
+Mumbai,Malad,Apartment,772,1,1.0,1,4.0,2.0,Semi-Furnished,9270000
+Mumbai,Bandra,Apartment,1315,2,1.0,1,12.0,1.0,Unfurnished,23540000
+Chennai,Tambaram,Apartment,1470,2,2.0,1,5.0,1.0,Semi-Furnished,10100000
+Mumbai,Navi Mumbai,Apartment,997,1,1.0,1,16.0,1.0,Unfurnished,10820000
+Delhi,Janakpuri,Independent House,1154,3,2.0,2,1.0,2.0,Unfurnished,12430000
+Delhi,Pitampura,Independent House,1695,4,4.0,2,13.0,2.0,Unfurnished,14650000
+Bangalore,HSR Layout,Villa,2320,3,3.0,2,19.0,1.0,Unfurnished,30050000
+Chennai,Porur,Apartment,1269,3,3.0,1,24.0,1.0,Semi-Furnished,7610000
+Bangalore,Yelahanka,Independent House,2079,3,3.0,1,29.0,2.0,Unfurnished,13890000
+Chennai,Tambaram,Builder Floor,1630,4,4.0,2,21.0,1.0,Semi-Furnished,11710000
+Chennai,Guindy,Apartment,662,1,1.0,1,37.0,1.0,Fully Furnished,4950000
+Chennai,Guindy,Independent House,2666,4,4.0,2,4.0,2.0,Unfurnished,27220000
+Delhi,Dwarka,Independent House,1516,2,1.0,1,2.0,1.0,Unfurnished,15950000
+Mumbai,Andheri,Independent House,2123,3,3.0,3,18.0,3.0,Fully Furnished,42890000
+Bangalore,Koramangala,Apartment,1722,3,3.0,1,5.0,1.0,Fully Furnished,23120000
+Delhi,Greater Kailash,Apartment,1318,2,2.0,1,15.0,1.0,Unfurnished,15590000
+Chennai,Mylapore,Villa,3405,5,4.0,3,0.0,2.0,Semi-Furnished,48680000
+Chennai,Tambaram,Apartment,1374,3,3.0,1,0.0,2.0,Fully Furnished,9460000
+Bangalore,Electronic City,Apartment,1294,4,4.0,1,9.0,1.0,Unfurnished,9530000
+Mumbai,Borivali,Apartment,1188,2,1.0,1,7.0,1.0,Semi-Furnished,25760000
+Chennai,Anna Nagar,Independent House,1949,3,2.0,1,1.0,1.0,Fully Furnished,18580000
+Chennai,T Nagar,Apartment,1170,1,1.0,1,25.0,1.0,Semi-Furnished,8450000
+Pune,Viman Nagar,Independent House,1522,3,3.0,1,5.0,3.0,Fully Furnished,19710000
+Bangalore,HSR Layout,Apartment,1091,3,2.0,1,8.0,1.0,Semi-Furnished,10600000
+Pune,Hadapsar,Apartment,500,2,1.0,1,21.0,2.0,Unfurnished,3460000
+Pune,Hadapsar,Independent House,2730,5,5.0,2,18.0,2.0,Semi-Furnished,17320000
+Bangalore,Jayanagar,Villa,1730,3,3.0,2,8.0,3.0,Unfurnished,17950000
+Delhi,Lajpat Nagar,Apartment,1461,3,3.0,1,22.0,3.0,Semi-Furnished,15910000
+Chennai,Anna Nagar,Apartment,1518,4,3.0,1,6.0,1.0,Unfurnished,10790000
+Chennai,ECR,Builder Floor,1851,4,4.0,3,11.0,1.0,Unfurnished,14620000
+Hyderabad,Begumpet,Builder Floor,730,1,1.0,1,14.0,2.0,Semi-Furnished,4710000
+Chennai,Tambaram,Apartment,532,1,1.0,1,41.0,1.0,Unfurnished,2790000
+Chennai,Porur,Builder Floor,1808,4,4.0,1,2.0,1.0,Fully Furnished,17680000
+Hyderabad,HITEC City,Builder Floor,940,3,2.0,1,5.0,2.0,Semi-Furnished,5730000
+Mumbai,Goregaon,Apartment,1215,2,2.0,1,11.0,0.0,Unfurnished,19010000
+Mumbai,Navi Mumbai,Apartment,1311,3,2.0,1,16.0,2.0,Unfurnished,22150000
+Bangalore,HSR Layout,Builder Floor,1103,1,1.0,3,8.0,1.0,Semi-Furnished,12770000
+Hyderabad,Begumpet,Apartment,2156,3,3.0,1,0.0,1.0,Fully Furnished,16210000
+Bangalore,Electronic City,Builder Floor,1331,4,4.0,2,3.0,0.0,Semi-Furnished,8760000
+Delhi,Punjabi Bagh,Villa,2506,4,4.0,3,34.0,2.0,Semi-Furnished,34970000
+Hyderabad,Gachibowli,Villa,3638,5,4.0,3,1.0,3.0,Semi-Furnished,44690000
+Bangalore,Whitefield,Apartment,1519,4,4.0,1,6.0,2.0,Unfurnished,11020000
+Mumbai,Dadar,Apartment,1534,2,2.0,1,3.0,0.0,Unfurnished,28440000
+Chennai,Velachery,Villa,1500,3,3.0,3,3.0,2.0,Semi-Furnished,16570000
+Delhi,Rohini,Builder Floor,1108,1,1.0,2,0.0,0.0,Unfurnished,12470000
+Bangalore,Whitefield,Apartment,1265,3,3.0,1,2.0,1.0,Unfurnished,10640000
+Hyderabad,Begumpet,Apartment,773,2,2.0,1,8.0,2.0,Semi-Furnished,5000000
+Chennai,Porur,Apartment,1496,3,2.0,1,22.0,1.0,Semi-Furnished,10480000
+Chennai,T Nagar,Villa,3016,4,4.0,2,3.0,2.0,Unfurnished,41620000
+Pune,Kharadi,Apartment,1570,3,3.0,1,3.0,1.0,,8620000
+Chennai,Mylapore,Independent House,2136,4,4.0,1,11.0,3.0,Unfurnished,28400000
+Chennai,Anna Nagar,Apartment,912,2,1.0,1,21.0,1.0,Unfurnished,5440000
+Delhi,Rohini,Builder Floor,1561,3,3.0,3,4.0,1.0,Semi-Furnished,17310000
+Pune,Wakad,Apartment,1262,3,2.0,1,10.0,2.0,Fully Furnished,10250000
+Hyderabad,HITEC City,Builder Floor,1428,3,2.0,1,4.0,2.0,Unfurnished,8390000
+Chennai,ECR,Apartment,1447,2,2.0,1,32.0,2.0,Semi-Furnished,12410000
+Mumbai,Powai,Apartment,998,2,2.0,1,5.0,1.0,Semi-Furnished,22090000
+Bangalore,Yelahanka,Independent House,1711,3,3.0,2,-6.0,1.0,Unfurnished,13640000
+Bangalore,Jayanagar,Apartment,1137,2,2.0,1,3.0,2.0,Unfurnished,11820000
+Delhi,Lajpat Nagar,Builder Floor,1345,2,2.0,2,9.0,1.0,Semi-Furnished,14020000
+Bangalore,Hebbal,Independent House,1615,3,3.0,2,0.0,1.0,Fully Furnished,17640000
+Mumbai,Bandra,Apartment,504,1,1.0,1,39.0,2.0,Fully Furnished,9260000
+Chennai,Tambaram,Villa,2592,5,5.0,2,3.0,3.0,Semi-Furnished,29640000
+Bangalore,Electronic City,Apartment,1624,3,3.0,1,11.0,1.0,Fully Furnished,17120000
+Chennai,Anna Nagar,Apartment,737,1,1.0,1,3.0,1.0,Semi-Furnished,6990000
+Mumbai,Dadar,Independent House,1872,3,3.0,2,11.0,2.0,Semi-Furnished,50500000
+Bangalore,Jayanagar,Apartment,1002,2,2.0,1,8.0,2.0,Unfurnished,9140000
+Mumbai,Andheri,Apartment,1076,3,3.0,1,7.0,1.0,Fully Furnished,15320000
+Bangalore,Yelahanka,Independent House,1529,2,1.0,1,24.0,2.0,Unfurnished,13330000
+Bangalore,Banashankari,Builder Floor,857,1,1.0,3,10.0,1.0,Semi-Furnished,6080000
+Chennai,Velachery,Apartment,1898,4,4.0,1,8.0,2.0,Semi-Furnished,9430000
+Chennai,Tambaram,Independent House,2291,4,4.0,2,,1.0,Fully Furnished,17890000
+Hyderabad,Begumpet,Apartment,721,1,1.0,1,0.0,2.0,Semi-Furnished,6480000
+Hyderabad,LB Nagar,Builder Floor,1433,3,3.0,1,5.0,1.0,Unfurnished,9310000
+Bangalore,Hebbal,Independent House,2022,4,4.0,2,31.0,2.0,Semi-Furnished,16400000
+Bangalore,Koramangala,Independent House,1699,4,3.0,2,0.0,2.0,Semi-Furnished,22320000
+Bangalore,Yelahanka,Apartment,1272,2,1.0,1,2.0,2.0,Unfurnished,13210000
+Bangalore,Marathahalli,Villa,3007,5,5.0,3,3.0,1.0,Semi-Furnished,37340000
+Bangalore,Jayanagar,Independent House,2128,4,4.0,1,3.0,2.0,Semi-Furnished,30610000
+Chennai,Adyar,Independent House,1361,4,4.0,1,1.0,2.0,Semi-Furnished,14590000
+Hyderabad,Jubilee Hills,Apartment,1128,2,2.0,1,1.0,1.0,Unfurnished,8330000
+Chennai,Guindy,Builder Floor,1545,3,3.0,2,11.0,3.0,,8310000
+Pune,Pimpri,Apartment,1467,3,3.0,1,15.0,2.0,Fully Furnished,11270000
+Chennai,OMR,Apartment,1090,2,2.0,1,29.0,,Unfurnished,7190000
+Bangalore,Hebbal,Independent House,1662,4,3.0,2,50.0,3.0,Semi-Furnished,8390000
+Pune,Pimpri,Builder Floor,1282,2,2.0,2,14.0,,Semi-Furnished,9480000
+Hyderabad,Kondapur,Apartment,1368,2,2.0,1,42.0,0.0,Semi-Furnished,4910000
+Hyderabad,HITEC City,Apartment,1363,2,1.0,1,0.0,0.0,Semi-Furnished,10020000
+Chennai,Anna Nagar,Villa,2086,4,4.0,2,1.0,2.0,Fully Furnished,30920000
+Hyderabad,HITEC City,Apartment,904,2,2.0,1,3.0,1.0,Semi-Furnished,3910000
+Bangalore,Marathahalli,Apartment,500,1,1.0,1,0.0,1.0,Semi-Furnished,4990000
+Bangalore,Electronic City,Independent House,1763,3,3.0,2,21.0,2.0,Semi-Furnished,16450000
+Mumbai,Thane,Apartment,579,1,1.0,1,11.0,1.0,Fully Furnished,8550000
+Delhi,Dwarka,Apartment,1517,4,4.0,1,0.0,1.0,Semi-Furnished,18970000
+Chennai,Guindy,Apartment,1476,2,1.0,1,0.0,3.0,Unfurnished,11720000
+Delhi,Pitampura,Villa,1759,3,3.0,2,11.0,3.0,Fully Furnished,29870000
+Mumbai,Dadar,Apartment,1373,3,3.0,1,18.0,1.0,Semi-Furnished,26550000
+Bangalore,Indiranagar,Villa,1800,4,3.0,2,2.0,,Unfurnished,24020000
+Chennai,Porur,Villa,3267,5,5.0,2,6.0,1.0,Unfurnished,27160000
+Chennai,Porur,Apartment,1150,3,3.0,1,19.0,1.0,Semi-Furnished,6160000
+Chennai,ECR,Independent House,1864,3,3.0,1,4.0,3.0,Fully Furnished,30170000
+Mumbai,Powai,Apartment,987,1,1.0,1,1.0,1.0,Unfurnished,17000000
+Delhi,Greater Kailash,Apartment,1612,4,4.0,1,8.0,2.0,Unfurnished,18870000
+Chennai,Velachery,Independent House,1580,3,2.0,1,3.0,3.0,Unfurnished,11900000
+Mumbai,Dadar,Independent House,1605,3,,2,23.0,2.0,Fully Furnished,29630000
+Mumbai,Worli,Independent House,871,1,1.0,3,20.0,2.0,Semi-Furnished,14280000
+Mumbai,Navi Mumbai,Apartment,1122,3,3.0,1,6.0,2.0,Fully Furnished,23310000
+Bangalore,Indiranagar,Apartment,1497,3,2.0,1,17.0,2.0,Fully Furnished,17710000
+Delhi,Greater Kailash,Apartment,1872,4,3.0,1,30.0,1.0,Fully Furnished,23350000
+Hyderabad,Begumpet,Apartment,1559,3,2.0,1,7.0,1.0,Unfurnished,10030000
+Delhi,Lajpat Nagar,Apartment,1170,2,1.0,1,18.0,1.0,Unfurnished,11790000
+Bangalore,HSR Layout,Independent House,2439,3,3.0,1,2.0,2.0,Fully Furnished,37630000
+Bangalore,Electronic City,Independent House,1609,2,1.0,1,-3.0,2.0,Semi-Furnished,12980000
+Bangalore,Banashankari,Independent House,1719,2,2.0,3,1.0,2.0,Fully Furnished,19830000
+Bangalore,HSR Layout,Apartment,1049,1,1.0,1,8.0,1.0,Semi-Furnished,12410000
+Bangalore,Whitefield,Apartment,1127,1,1.0,1,29.0,1.0,Fully Furnished,9660000
+Pune,Hinjewadi,Independent House,1382,4,4.0,3,19.0,3.0,Semi-Furnished,12200000
+Chennai,Guindy,Villa,3226,5,5.0,3,0.0,2.0,Fully Furnished,36490000
+Chennai,Adyar,Independent House,2230,5,4.0,3,2.0,2.0,Semi-Furnished,24610000
+Mumbai,Malad,Builder Floor,1481,3,3.0,1,6.0,1.0,Semi-Furnished,25740000
+Mumbai,Powai,Builder Floor,1147,1,1.0,2,3.0,2.0,Semi-Furnished,24670000
+Hyderabad,Secunderabad,Apartment,1368,4,,1,31.0,1.0,Unfurnished,6230000
+Delhi,Mayur Vihar,Independent House,1997,4,4.0,3,19.0,2.0,Semi-Furnished,23910000
+Chennai,OMR,Independent House,1601,3,3.0,2,3.0,2.0,Fully Furnished,14740000
+Chennai,Guindy,Independent House,1936,3,,2,0.0,2.0,Fully Furnished,19230000
+Bangalore,Marathahalli,Independent House,1331,2,1.0,2,1.0,2.0,Fully Furnished,14650000
+Delhi,Punjabi Bagh,Apartment,1471,2,1.0,1,7.0,2.0,Unfurnished,18320000
+Pune,Kharadi,Apartment,1089,2,2.0,1,4.0,1.0,Fully Furnished,8320000
+Pune,Aundh,Apartment,967,2,2.0,1,5.0,1.0,Semi-Furnished,7680000
+Chennai,Tambaram,Independent House,1811,4,4.0,3,2.0,1.0,Semi-Furnished,14880000
+Chennai,T Nagar,Apartment,1130,2,2.0,1,3.0,1.0,Semi-Furnished,11740000
+Bangalore,HSR Layout,Builder Floor,1512,2,1.0,2,1.0,,Semi-Furnished,14160000
+Chennai,Velachery,Apartment,1582,4,4.0,1,0.0,,,20270000
+Hyderabad,Kukatpally,Villa,2483,4,4.0,2,5.0,1.0,Fully Furnished,24300000
+Chennai,Mylapore,Independent House,1790,2,2.0,2,-13.0,2.0,Semi-Furnished,20810000
+Chennai,ECR,Builder Floor,1185,3,3.0,2,1.0,0.0,Semi-Furnished,12400000
+Delhi,Pitampura,Builder Floor,863,2,1.0,1,4.0,1.0,Semi-Furnished,8770000
+Pune,Hinjewadi,Villa,2812,5,,2,8.0,3.0,Semi-Furnished,28750000
+Chennai,Guindy,Villa,3462,5,4.0,2,9.0,2.0,Semi-Furnished,31140000
+Pune,Viman Nagar,Independent House,2624,4,,1,0.0,3.0,Semi-Furnished,33100000
+Mumbai,Goregaon,Apartment,623,1,1.0,1,19.0,2.0,Semi-Furnished,8360000
+Chennai,Mylapore,Apartment,1216,2,2.0,1,9.0,2.0,Unfurnished,12700000
+Delhi,Rohini,Independent House,2305,4,4.0,3,0.0,1.0,Semi-Furnished,30290000
+Hyderabad,Kondapur,Villa,3340,5,5.0,3,2.0,3.0,Semi-Furnished,32880000
+Bangalore,Indiranagar,Apartment,786,1,1.0,1,2.0,1.0,Fully Furnished,12340000
+Delhi,Dwarka,Apartment,770,1,1.0,1,9.0,0.0,,7040000
+Delhi,Punjabi Bagh,Independent House,1972,4,4.0,2,3.0,3.0,Semi-Furnished,31320000
+Bangalore,Marathahalli,Apartment,1618,3,3.0,1,22.0,1.0,Unfurnished,13020000
+Bangalore,Banashankari,Apartment,2115,5,5.0,1,22.0,2.0,Unfurnished,12050000
+Bangalore,Whitefield,Villa,3481,5,5.0,2,18.0,2.0,Unfurnished,22990000
+Chennai,Guindy,Apartment,1254,3,3.0,1,13.0,1.0,Semi-Furnished,6040000
+Pune,Hadapsar,Apartment,1175,2,2.0,1,6.0,2.0,Fully Furnished,11100000
+Delhi,Lajpat Nagar,Apartment,961,2,2.0,1,8.0,2.0,Fully Furnished,13620000
+Bangalore,Indiranagar,Villa,3097,6,5.0,2,15.0,2.0,Fully Furnished,44470000
+Hyderabad,Madhapur,Builder Floor,2004,5,5.0,2,5.0,2.0,Unfurnished,14890000
+Mumbai,Bandra,Apartment,1597,3,2.0,1,1.0,0.0,Semi-Furnished,32020000
+Bangalore,Jayanagar,Apartment,594,2,1.0,1,19.0,1.0,Fully Furnished,5610000
+Chennai,T Nagar,Independent House,2435,4,4.0,2,1.0,2.0,Semi-Furnished,25290000
+Chennai,Guindy,Apartment,1137,3,2.0,1,14.0,0.0,Fully Furnished,7210000
+Hyderabad,LB Nagar,Apartment,1328,2,1.0,1,12.0,2.0,Fully Furnished,10210000
+Mumbai,Powai,Apartment,1097,2,1.0,1,44.0,1.0,Unfurnished,11240000
+Chennai,Mylapore,Builder Floor,1677,4,4.0,1,10.0,3.0,Fully Furnished,15970000
+Chennai,Mylapore,Independent House,1795,4,4.0,1,0.0,1.0,Semi-Furnished,25200000
+Chennai,OMR,Independent House,2012,4,4.0,2,12.0,1.0,,17470000
+Chennai,Mylapore,Villa,2308,3,2.0,3,24.0,3.0,Semi-Furnished,28030000
+Chennai,OMR,Independent House,1236,2,2.0,1,1.0,2.0,Semi-Furnished,10690000
+Bangalore,Marathahalli,Builder Floor,1558,3,3.0,2,3.0,2.0,Fully Furnished,10560000
+Chennai,Tambaram,Apartment,717,1,1.0,1,4.0,1.0,Semi-Furnished,7010000
+Chennai,Mylapore,Apartment,1113,2,1.0,1,1.0,0.0,Fully Furnished,10910000
+Delhi,Janakpuri,Apartment,830,2,1.0,1,14.0,2.0,Semi-Furnished,9660000
+Bangalore,Hebbal,Apartment,1313,2,1.0,1,3.0,1.0,Semi-Furnished,10600000
+Chennai,Adyar,Apartment,962,1,1.0,1,,2.0,Semi-Furnished,9760000
+Hyderabad,Gachibowli,Apartment,1398,3,2.0,1,1.0,1.0,Semi-Furnished,10740000
+Bangalore,Electronic City,Builder Floor,898,2,1.0,2,3.0,1.0,Unfurnished,4970000
+Delhi,Greater Kailash,Apartment,609,2,2.0,1,4.0,1.0,Unfurnished,9070000
+Delhi,Pitampura,Independent House,1876,4,4.0,1,13.0,2.0,Unfurnished,22710000
+Bangalore,Electronic City,Builder Floor,1460,4,4.0,3,6.0,2.0,Fully Furnished,15040000
+Bangalore,Whitefield,Independent House,1272,2,2.0,1,5.0,2.0,Unfurnished,11190000
+Chennai,Mylapore,Builder Floor,1940,4,4.0,1,1.0,1.0,Unfurnished,18260000
+Chennai,Adyar,Villa,2650,4,4.0,3,7.0,2.0,Fully Furnished,36260000
+Delhi,Janakpuri,Apartment,703,1,1.0,1,13.0,2.0,Fully Furnished,5680000
+Pune,Viman Nagar,Villa,2027,5,5.0,2,3.0,1.0,Unfurnished,25530000
+Bangalore,Jayanagar,Independent House,1325,2,2.0,2,5.0,3.0,Fully Furnished,16890000
+Mumbai,Thane,Builder Floor,1433,2,2.0,3,1.0,2.0,Semi-Furnished,21760000
+Chennai,Velachery,Apartment,1205,2,2.0,1,19.0,1.0,Unfurnished,7460000
+Chennai,Mylapore,Apartment,782,1,1.0,1,28.0,,Unfurnished,4310000
+Chennai,Tambaram,Villa,3066,5,4.0,2,-25.0,2.0,Semi-Furnished,27930000
+Mumbai,Malad,Villa,2280,4,4.0,3,0.0,3.0,Fully Furnished,44980000
+Bangalore,Whitefield,Builder Floor,853,2,2.0,1,5.0,2.0,Semi-Furnished,4830000
+Mumbai,Goregaon,Apartment,642,1,1.0,1,15.0,2.0,Semi-Furnished,8480000
+Chennai,Anna Nagar,Builder Floor,1089,2,2.0,2,1.0,2.0,Fully Furnished,8190000
+Delhi,Mayur Vihar,Villa,3033,4,3.0,2,6.0,2.0,Semi-Furnished,40730000
+Hyderabad,Madhapur,Apartment,1707,3,3.0,1,9.0,1.0,Unfurnished,14170000
+Delhi,Punjabi Bagh,Apartment,1015,1,1.0,1,17.0,2.0,Unfurnished,10110000
+Chennai,Tambaram,Builder Floor,1136,1,1.0,2,0.0,2.0,Semi-Furnished,10460000
+Delhi,Vasant Kunj,Apartment,1048,2,1.0,1,1.0,0.0,Semi-Furnished,15320000
+Bangalore,Electronic City,Independent House,1484,3,3.0,2,4.0,1.0,Semi-Furnished,13260000
+Bangalore,Yelahanka,Independent House,800,1,1.0,1,10.0,2.0,Semi-Furnished,9630000
+Bangalore,Electronic City,Independent House,2210,4,3.0,2,10.0,1.0,Semi-Furnished,23910000
+Chennai,Porur,Apartment,1052,2,2.0,1,0.0,2.0,Unfurnished,8250000
+Chennai,Adyar,Apartment,1217,4,4.0,1,10.0,1.0,Fully Furnished,15100000
+Delhi,Vasant Kunj,Villa,4015,6,6.0,2,16.0,2.0,Unfurnished,75570000
+Pune,Hinjewadi,Builder Floor,938,2,1.0,2,16.0,2.0,Semi-Furnished,6420000
+Bangalore,Electronic City,Villa,3053,6,6.0,2,0.0,2.0,Fully Furnished,39200000
+Chennai,OMR,Apartment,1259,3,3.0,1,10.0,1.0,Unfurnished,7150000
+Hyderabad,Jubilee Hills,Apartment,1640,3,3.0,1,5.0,0.0,Semi-Furnished,18590000
+Mumbai,Thane,Apartment,1169,1,1.0,1,0.0,2.0,Unfurnished,18620000
+Hyderabad,Madhapur,Apartment,500,2,2.0,1,2.0,1.0,Semi-Furnished,4870000
+Delhi,Dwarka,Apartment,1702,3,3.0,1,3.0,1.0,Fully Furnished,18520000
+Bangalore,Electronic City,Apartment,771,2,1.0,1,24.0,1.0,Unfurnished,6000000
+Pune,Aundh,Apartment,500,1,1.0,1,5.0,1.0,Semi-Furnished,4740000
+Delhi,Punjabi Bagh,Villa,3096,6,6.0,2,13.0,2.0,Unfurnished,35620000
+Hyderabad,Jubilee Hills,Independent House,1688,4,4.0,2,5.0,1.0,Fully Furnished,15550000
+Pune,Hinjewadi,Independent House,2409,3,2.0,3,0.0,3.0,Unfurnished,21730000
+Chennai,ECR,Apartment,1452,3,2.0,1,8.0,1.0,Fully Furnished,17660000
+Bangalore,HSR Layout,Apartment,971,3,3.0,1,3.0,2.0,Semi-Furnished,11370000
+Chennai,Adyar,Independent House,1658,2,1.0,1,3.0,1.0,Semi-Furnished,17180000
